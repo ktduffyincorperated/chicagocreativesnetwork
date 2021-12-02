@@ -1,1 +1,1 @@
-# chicagocreativesnetwork
+# Chicago Creatives Network
