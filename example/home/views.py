@@ -8,6 +8,10 @@ def index(request):
 def home(request):
     return render(request, 'home/index.html')
 
+# templates we are creating
+def themes(request):
+    return render(request, 'dashboard/themesindex.html')
+
 
 def register(request):
     if request.method == "GET":
