@@ -5,7 +5,55 @@
 
 <html>
 <body>
-    hello world 
+   <div id="header">
+        <div class="logo">LOGO
+            {% load static %} <img src="{% static "images/logo.jpg" %}" alt="" />
+        </div>
+        <div class="menuIcon">MENU</div>
+        <marquee width="60%" direction="right" height="100px" scrollamount="1">
+            <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
+            *  Title scroll  *  Title  *  Title  *  Title  *  Title  
+            *  Title  *  Title  *  Title  *  Title  *  Title  
+            *  Title  *  Title  *  Title  *  Title  *  Title  
+            *  Title  *  Title  *  Title  *  Title  *  Title  
+            *  Title  *  Title  *  Title  *  Title  *  Title  
+            </marquee>
+   </div> 
+
+   <div id="main">
+        <div class="mainItems">
+            <div class="calendar">Events<br>Calendar</div>
+            <div class="journal">Arts<br>Journalism</div>
+            <div class="map">Cultural Asset<br>Map</div>
+            <div class="groups">Interest<br> groups</div>
+        </div>
+        <div class="info">Info</div>
+   </div> 
+
+   <div id="menu" style="display:none;">
+        <div class="menuAbout"></div>
+        <div class="menuInvolved"></div>
+        <div class="menuAcess"></div>
+        <div class="menuReportAbuse"></div>
+        <div class="menuFeed"></div>
+        <div class="menuCalendar"></div>
+        <div class="menuJournal"></div>
+        <div class="menuMap"></div>
+        <div class="MenuGroups"></div>
+</div> 
+
+   <footer style="margin-top: 5vh;">
+       <div class="footerMenus">
+           <div class="footerAccess">Accesibility</div>
+           <div class="footerAbuse">Report Abuse</div>
+           <div class="footerEmail">Email Us</div>
+           <div class="footerSurvey">Take our Survey</div>
+           <div class="groups">Interest<br> groups</div>
+           <div class="footerLogo">LOGO
+            {% load static %} <img src="{% static "images/logo.jpg" %}" alt="" />
+        </div>
+       </div>
+   </footer> 
 
 </body>
 </html> 
