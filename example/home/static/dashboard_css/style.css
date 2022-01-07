@@ -2,3 +2,8 @@
 li a {
   color: green;
 }
+
+/* scroll text */
+.scroll{
+  width: 100vw;
+}
