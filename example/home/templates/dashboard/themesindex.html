@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 
 <html>
 <body>
    <div id="header">
-        <div class="logo">LOGO
-            {% load static %} <img src="{% static "images/logo.jpg" %}" alt="" />
+       <div class="topBarMenu">
+            <div class="logo">LOGO
+                {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+            </div>
+            <div class="menuIcon"></div>
         </div>
-        <div class="menuIcon">MENU</div>
         <div class="scroll">
+            <div class="wrapper">
             <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
-            <p>*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</p>  
+                <p>*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</p> 
+            </div> 
         </div>
    </div> 
 
    <div id="main">
         <div class="mainItems">
-            <div class="calendar">Events<br>Calendar</div>
-            <div class="journal">Arts<br>Journalism</div>
-            <div class="map">Cultural Asset<br>Map</div>
-            <div class="groups">Interest<br> groups</div>
+            <div class="calendar">Events<br>
+                <span>Calendar</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+            </div>
+
+            <div class="journal">Arts<br>
+                <span>Journalism</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+            </div>
+
+            <div class="map">Cultural Asset<br>
+                <span>Map</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+            </div>
+
+            <div class="groups">Interest<br>
+                <span>Groups</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+            </div>
         </div>
         <div class="info">Info</div>
    </div> 
