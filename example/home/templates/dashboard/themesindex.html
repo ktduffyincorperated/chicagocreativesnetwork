@@ -27,6 +27,9 @@
                 <div class="bgMainImg">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
                 </div>
+                <div class="arrow">
+                    <!-- {% load static %} <img src="{% static "images/arrow.png" %}" alt="" /> -->
+                </div>
 
             </div>
 
@@ -46,15 +49,22 @@
                 
             </div>
 
-            <div class="groups">Interest<br>
-                <span>Groups</span>
+            <div class="groups">Creative<br>
+                <span>Network</span>
                 <div class="bgMainImg">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
                 </div>
               
             </div>
         </div>
+        <div class="arrows">
+            <div class="grid-item gridCal">{% load static %} <img src="{% static "images/arroCal.svg" %}" alt="" /></div>
+            <div class="grid-item gridJ">{% load static %} <img src="{% static "images/arroJ.svg" %}" alt="" /></div>
+            <div class="grid-item gridMap">{% load static %} <img src="{% static "images/arroMap.svg" %}" alt="" /></div>
+            <div class="grid-item gridGroups" >{% load static %} <img src="{% static "images/arroNet.svg" %}" alt="" /></div>
+        </div>
         <div class="info">Info</div>
+
    </div> 
 
 <!-- <div id="menu">
@@ -70,17 +80,20 @@
 </div>  -->
 
    <footer>
-       <div class="footerMenus">
-           <p class="footerAccess">Accesibility</p>
-           <p class="footerAbuse">Report Abuse</p>
-           <p class="footerEmail">Email Us</p>
-           <p class="footerSurvey">Take our Survey</p>
-           <p class="footerGroups">Interest<br> groups</p>
-           <p class="footerLogo">LOGO</p>
-            {% load static %} <img src="{% static "images/logo.jpg" %}" alt="" />
+       
+       <div class="footerMenu">
+           <p class="footerAccess">* Accesibility *</p>
+           <p class="footerBlank"></p>
+           <p class="footerAbuse">* Report Abuse *</p>
+           <p class="footerMap">* Site Map *</p>
+           <p class="footerEmail">* Email * </p>
+           <p class="footerSurvey">* Survey *</p>   
         </div>
+       <div class="footerLogo">
+        {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
        </div>
    </footer> 
+   <div class="gradBar"></div>
    
 
 </body>
