@@ -12,6 +12,9 @@ def home(request):
 def themes(request):
     return render(request, 'dashboard/themesindex.html')
 
+def themes(request):
+    return render(request, 'dashboard/themesabout.html') 
+
 
 def register(request):
     if request.method == "GET":

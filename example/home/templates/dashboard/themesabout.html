@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
-<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<!-- <script src="{% static 'dashboard_js/jquery-3.6.0.slim.min.js' %}"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
+
 
 <html>
 <body>
+    <div id="header">
+        <div class="topBarMenu">
+             <div class="logo">LOGO
+                 {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+             </div>
+             <div class="menuIcon">
+                 <div class="barOne"></div>
+                 <div class="barTwo"></div>
+             </div>
+         </div>
+         <div class="scroll">
+            
+         </div>
+    </div>
 
+    <div id="menu">
+        <div class="menuAbout">About</div>
+        <div class="menuDash">Dashboard</div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuNet">Creative Network</div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+</div> 
+
+    <div id="aboutMain">
+        <h1>A New Network for Artists</h1>
+        <div class="aboutItems">
+            <div class="why">
+                <h2>Why</h2>
+                <div class="typeBox">
+                    <p>to provide powerful tools for connecting around creativity for Chicago’s Artists, Administrators and Auduences  </p>
+                </div>
+                <div class="bar">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrowWhy">
+                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
+                </div>
+               
+            </div>
+            <div class="what">
+                <h2>What</h2>
+                <div class="bar">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrow">
+                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
+                </div>
+            </div>
+            <div class="when">
+                <h2>When</h2>
+                <div class="bar">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrow">
+                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
+                </div>
+            </div>
+            <div class="where">
+                <h2>Where</h2>
+                <div class="bar">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrow">
+                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
+                </div>
+            </div>
+            <div class="who">
+                <h2 class="whoTitle">Who is the site for</h2>
+                <div class="bar">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrow">
+                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
+                </div>
+            </div>
+            <div class="how">
+                <h2 class="howTitle">How to use the site</h2>
+                <div class="bar">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrow">
+                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>   
+        <div class="footerMenu">
+            <p class="footerAccess">* Accesibility *</p>
+            <p class="footerBlank"></p>
+            <p class="footerAbuse">* Report Abuse *</p>
+            <p class="footerMap">* Site Map *</p>
+            <p class="footerEmail">* Email * </p>
+            <p class="footerSurvey">* Survey *</p>   
+         </div>
+        <div class="footerLogo">
+         {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+        </div>
+    </footer> 
+    <div class="gradBar"></div>
 
 </body>
 </html> 

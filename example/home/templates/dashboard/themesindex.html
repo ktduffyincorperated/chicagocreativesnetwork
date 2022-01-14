@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
-<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 <html>
 <body>
@@ -10,7 +11,10 @@
             <div class="logo">LOGO
                 {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
             </div>
-            <div class="menuIcon"></div>
+            <div class="menuIcon">
+                <div class="barOne"></div>
+                <div class="barTwo"></div>
+            </div>
         </div>
         <div class="scroll">
             <div class="wrapper">
@@ -67,20 +71,17 @@
 
    </div> 
 
-<!-- <div id="menu">
-        <div class="menuAbout"></div>
-        <div class="menuInvolved"></div>
-        <div class="menuAcess"></div>
-        <div class="menuReportAbuse"></div>
-        <div class="menuFeed"></div>
-        <div class="menuCalendar"></div>
-        <div class="menuJournal"></div>
-        <div class="menuMap"></div>
-        <div class="MenuGroups"></div>
-</div>  -->
+<div id="menu">
+        <div class="menuAbout">About</div>
+        <div class="menuDash">Dashboard</div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuNet">Creative Network</div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+</div> 
 
-   <footer>
-       
+   <footer>   
        <div class="footerMenu">
            <p class="footerAccess">* Accesibility *</p>
            <p class="footerBlank"></p>
