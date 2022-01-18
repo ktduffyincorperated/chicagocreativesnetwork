@@ -123,9 +123,17 @@
         height: 10vh;
     }
 
+
     h2{
         flex:1;
         font-size: 5em;
+    }
+
+    .h2Toggle{
+        flex: none;
+        width: 15vw;
+        font-size: 3em;
+        transition: width 1s font-size 1s;
     }
 
     .bar{
@@ -136,6 +144,11 @@
 
     .bar img{
         width: 60vw;
+    }
+
+    .barOpacity{
+        opacity: 0;
+        transition: opacity 1s;
     }
 
     .arrow, .arrowWhy{
@@ -167,6 +180,34 @@
 
     .typeBox p{
         font-size: 2em;
+    }
+
+    .whyMargin{
+        padding-bottom: 5vh;
+    }
+
+    .whatMargin{
+        padding-bottom: 9vh;
+    }
+
+    .whenMargin{
+        padding-bottom: 0vh;
+    }
+
+    .whereMargin{
+        padding-bottom: 55vh;
+    }
+
+    /* .where img{
+        width: 58vw;
+    } */
+
+    .whoMargin{
+        padding-bottom: 28vh;
+    }
+
+    .howMargin{
+        padding-bottom: 45vh;
     }
     
 

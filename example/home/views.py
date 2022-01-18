@@ -9,10 +9,10 @@ def home(request):
     return render(request, 'home/index.html')
 
 # templates we are creating
-def themes(request):
+def themesIndex(request):
     return render(request, 'dashboard/themesindex.html')
 
-def themes(request):
+def themesAbout(request):
     return render(request, 'dashboard/themesabout.html') 
 
 

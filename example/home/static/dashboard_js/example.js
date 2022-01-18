@@ -15,22 +15,80 @@ $(document).ready(function() {
       function changeText(id) {
           id.innerHTML = "Ooops!";
       }
+// hides
+      $(" .typeBoxWhy, .typeBoxWhat, .typeBoxWhen, .typeBoxWhere, .typeBoxWho, .typeBoxHow, #menu").hide();
 
-      $(".typeBox, #menu").hide();
-
-      $(".why").click(function(){
-        $(".typeBox").fadeIn("slow");
-        $(".bar").fadeOut("slow");
-        $(".why").css("height","14vh");
-        $(".arrowWhy").addClass("arrowRotate");
-      });
-
+// menu icon = to X      
       $(".menuIcon").click(function(){
         $(this).addClass("gradientHolder");
          $("#menu").slideToggle();
          $(".barOne").toggleClass("barOneRot");
-         $(".barTwo").toggleClass("barTwoRot")
+         $(".barTwo").toggleClass("barTwoRot");
+         $("footer").toggleClass("footerControl");
+
       });
+
+// why open close      
+      $(".why").click(function(){
+        $(this).toggleClass("whyMargin");
+        $(".arrowWhy").toggleClass("arrowRotate");
+          $(".barWhy").fadeToggle("slow");
+            $(".typeBoxWhy").fadeToggle();
+            $("#whyTog").toggleClass("whyToggle");
+
+        
+      });
+
+        // what open close      
+        $(".what").click(function(){
+          $(".typeBoxWhat").fadeToggle("slow");
+          $(".barWhat").toggleClass('barOpacity');
+          $(this).toggleClass("whatMargin");
+          $(".arrowWhat").toggleClass("arrowRotate");
+        });
+
+        // when open close      
+        $(".when").click(function(){
+          $(".typeBoxWhen").fadeToggle("slow");
+          $(".barWhen").fadeToggle("slow");
+          $(this).toggleClass("whenMargin");
+          $(".arrowWhen").toggleClass("arrowRotate");
+        });
+
+        // where open close      
+        $(".where").click(function(){
+          $(".typeBoxWhere").fadeToggle("slow");
+          $(".barWhere").fadeToggle("slow");
+          $(this).toggleClass("whereMargin");
+          $(".arrowWhere").toggleClass("arrowRotate");
+        });
+
+        // who open close      
+        $(".who").click(function(){
+          $(".typeBoxWho").fadeToggle("slow");
+          $(".barWho").fadeToggle("slow");
+          $(this).toggleClass("whoMargin");
+          $(".arrowWho").toggleClass("arrowRotate");
+        });
+
+        // how open close      
+        $(".how").click(function(){
+          $(".typeBoxHow").fadeToggle("slow");
+          $(".barHow").fadeToggle("slow");
+          $(this).toggleClass("howMargin");
+          $(".arrowHow").toggleClass("arrowRotate");
+        });
+
+      
+
+
+
+
+
+
+
+
+
 
 
 });
