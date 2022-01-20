@@ -14,11 +14,32 @@
     {% else %}
         <a href="{% url 'login' %}"> Login </a>
     {% endif %}
+    <a href="{% url 'home' %}"> Home </a>
 
     <ul>
         <li><a>This is a test dashboard page. Check the 'static' directory for the css and js used for this page.</a>
     </ul>
-    <a href="{% url 'home' %}"> Home </a>
+
+    {% if user.is_authenticated  %}
+        <h3>New Post</h3>
+        <form method="post" style="margin-top: 1.3em;">
+          {{ post_form.as_p }}
+          {% csrf_token %}
+
+          <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
+
+        </form>
+    {% endif %}
+
+    {% for post in post_list %}
+        <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">{{ post.title }}</h2>
+            <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+            <p class="card-text">{{post.body|safe}}</p>
+        </div>
+    </div>
+    {% endfor %}
 
 </body>
 </html> 
