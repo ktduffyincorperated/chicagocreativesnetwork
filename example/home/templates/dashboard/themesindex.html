@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{% static 'dashboard_js/example.js' %}"></script>
+<html>
+<body>
+   <div id="header">
+       <div class="topBarMenu">
+            <div class="logo">LOGO
+                {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+            </div>
+            <div class="menuIcon">
+                <div class="barOne"></div>
+                <div class="barTwo"></div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="wrapper">
+            <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
+                <p>*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</p> 
+            </div> 
+        </div>
+   </div> 
+
+   <div id="main">
+        <div class="mainItems">
+            <div class="calendar">Events<br>
+                <span>Calendar</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="arrow">
+                    <!-- {% load static %} <img src="{% static "images/arrow.png" %}" alt="" /> -->
+                </div>
+
+            </div>
+
+            <div class="journal">Arts<br>
+                <span>Journalism</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                
+            </div>
+
+            <div class="map">Cultural Asset<br>
+                <span>Map</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                
+            </div>
+
+            <div class="groups">Creative<br>
+                <span>Network</span>
+                <div class="bgMainImg">
+                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+              
+            </div>
+        </div>
+        <div class="arrows">
+            <div class="grid-item gridCal">{% load static %} <img src="{% static "images/arroCal.svg" %}" alt="" /></div>
+            <div class="grid-item gridJ">{% load static %} <img src="{% static "images/arroJ.svg" %}" alt="" /></div>
+            <div class="grid-item gridMap">{% load static %} <img src="{% static "images/arroMap.svg" %}" alt="" /></div>
+            <div class="grid-item gridGroups" >{% load static %} <img src="{% static "images/arroNet.svg" %}" alt="" /></div>
+        </div>
+        <div class="info">Info</div>
+
+   </div> 
+
+<div id="menu">
+        <div class="menuAbout">About</div>
+        <div class="menuDash">Dashboard</div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuNet">Creative Network</div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+</div> 
+
+   <footer>   
+       <div class="footerMenu">
+           <p class="footerAccess">* Accesibility *</p>
+           <p class="footerBlank"></p>
+           <p class="footerAbuse">* Report Abuse *</p>
+           <p class="footerMap">* Site Map *</p>
+           <p class="footerEmail">* Email * </p>
+           <p class="footerSurvey">* Survey *</p>   
+        </div>
+       <div class="footerLogo">
+        {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+       </div>
+   </footer> 
+   <div class="gradBar"></div>
+   
+
+</body>
+</html> 

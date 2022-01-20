@@ -37,6 +37,13 @@ def home(request):
 
     return render(request, 'home/index.html', {'post_list': post_list})
 
+# templates we are creating
+def themesIndex(request):
+    return render(request, 'dashboard/themesindex.html')
+
+def themesAbout(request):
+    return render(request, 'dashboard/themesabout.html') 
+
 
 def register(request):
     if request.method == "GET":

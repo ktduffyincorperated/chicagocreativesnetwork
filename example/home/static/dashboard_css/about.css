@@ -1,0 +1,275 @@
+/* fonts */
+@font-face {
+    font-family: 'Hind-SemiBold';
+    src: local('Hind-Bold'), url('/static/fonts/Hind-SemiBold.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Hind-Medium';
+    src: local('Hind-Medium'), url('/static/fonts/Hind-Medium.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'RopaSans-Regular';
+    src: local('Hind-Bold'), url('/static/fonts/RopaSans-Regular.woff') format('woff');
+  }
+  
+  body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #FFE3E3;
+  }
+
+  
+  /* +++++++++++++++++++++++++++++++
+  header
+  +++++++++++++++++++++++++++++++ */
+  
+  #header{
+  background-color: black;
+  position: fixed;
+  }
+  
+  .topBarMenu{
+    width: 101vw;
+    display: flex;
+  }
+  
+  .logo{
+    flex: 1;
+  }
+        .logo img{
+          width: 30vw;
+        }
+  
+  .menuIcon{
+      background: #E5CFE5;
+      height: 7vh;
+      width: 7vh;
+      margin: 3em;
+      position: relative;
+  }
+
+  .barOne, .barTwo{
+      width: 10vw;
+      height: 0.5vh;
+      background: black;
+      margin: 2vh auto 0;
+  }
+
+  .barOneRot{
+    transform: rotate(45deg);
+    margin: 3vh auto 0;
+  }
+  .barTwoRot{
+    transform: rotate(-45deg);
+    margin: 0vh auto 0;
+}
+  
+      /* .menuIcon::before{
+        content: "";
+        position: absolute;
+        width: 9vw;
+        height: 0.4vh;
+        top: 2.3vh;
+        left: 3vw;
+        background-color: black;
+        box-shadow: 0 2vh;
+      } */
+  
+      /* .menuIcon::after{
+        content: "";
+        position: absolute;
+        width: 4vw;
+        height: 0.5vh;
+      } */
+
+/* +++++++++++++++++++++++++++++++
+  main
+  +++++++++++++++++++++++++++++++ */  
+
+    #aboutMain{
+        font-family: 'Hind-Regular', sans-serif;
+        padding-top: 1.5vh;
+        /* position: relative; */
+
+    }  
+    
+    h1{
+        font-size: 8em;
+        color: #E989AB;
+        font-family: 'RopaSans-Regular', sans-serif;
+        text-decoration: underline;
+        text-decoration-thickness: 1vh;
+        text-decoration-color: black;
+        line-height: 1.2em;
+        letter-spacing: 0.05em;
+        margin: 14vh 7vw 0;  
+    }
+
+    .whoTitle, .howTitle{
+        font-size: 4.1em;
+    }
+    
+    .aboutItems{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Hind-Medium', sans-serif;
+        margin: 0vw 0 12vw 8vw;
+    }
+
+    .why, .what, .when, .where, .how, .who{
+        display: flex;
+        height: 10vh;
+    }
+
+
+    h2{
+        flex:1;
+        font-size: 5em;
+    }
+
+    .h2Toggle{
+        flex: none;
+        width: 15vw;
+        font-size: 3em;
+        transition: width 1s font-size 1s;
+    }
+
+    .bar{
+        flex:1;
+        margin-left: -50vw;
+        margin-top: 12vw;
+    }
+
+    .bar img{
+        width: 60vw;
+    }
+
+    .barOpacity{
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .arrow, .arrowWhy{
+        flex:0.5;
+        margin: 8vh 0 0 -4vw;
+    }
+
+    .arrow img, .arrowWhy img{
+        width: 5vw;
+    }
+
+    .arrowRotate{
+        animation: arrowRot 1s 1 forwards;
+        margin-right: 4vw;
+    }
+
+    @keyframes arrowRot{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(180deg);}
+
+        
+    }
+
+    .typeBox{
+        width: 50vw;
+        margin: 8vw;
+        margin: 4em;
+    }
+
+    .typeBox p{
+        font-size: 2em;
+    }
+
+    .whyMargin{
+        padding-bottom: 5vh;
+    }
+
+    .whatMargin{
+        padding-bottom: 9vh;
+    }
+
+    .whenMargin{
+        padding-bottom: 0vh;
+    }
+
+    .whereMargin{
+        padding-bottom: 55vh;
+    }
+
+    /* .where img{
+        width: 58vw;
+    } */
+
+    .whoMargin{
+        padding-bottom: 28vh;
+    }
+
+    .howMargin{
+        padding-bottom: 45vh;
+    }
+    
+
+
+ /* +++++++++++++++++++++++++++++++
+  footer
+  +++++++++++++++++++++++++++++++ */  
+
+
+footer{
+    display: flex;
+    background: black;
+    
+  }
+  
+  footer p{
+    margin: 3vh 0 0 0;
+    text-decoration: underline;
+  
+  }
+  
+  .footerMenu{
+    font-family: 'Hind-SemiBold', sans-serif;
+    font-size: 2em;
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 4vw;
+  }
+  
+  .footerAccess{color: #E6F4E6;}
+  .footerBlank{}
+  .footerAbuse{margin-top: 1vh; color: #FFE3E3;}
+  .footerMap{margin-top: 1vh; color: #F8E9FF;}
+  .footerEmail{margin-top: -1vh; color: #E1EFF5;}
+  .footerSurvey{margin-top: -1vh; color: #E6F4E6;}
+  
+  .footerLogo{
+    flex: 1;
+    margin-top: 2vh;
+  }
+  
+  .footerLogo img{
+    width: 25vw;
+    animation: footerLogoRotate 10s infinite alternate-reverse;
+  }
+  
+  @keyframes footerLogoRotate{
+    0%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+  }
+  
+  .gradBar{
+    height: 3vw;
+  background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
+  margin-top: -1vh;
+  }
+
+
+
+
+  

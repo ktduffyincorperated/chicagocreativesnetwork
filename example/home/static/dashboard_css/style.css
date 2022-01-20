@@ -1,4 +1,196 @@
+/* fonts */
+@font-face {
+  font-family: 'Hind-SemiBold';
+  src: local('Hind-Bold'), url('/static/fonts/Hind-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'RopaSans-Regular';
+  src: local('Hind-Bold'), url('/static/fonts/RopaSans-Regular.woff') format('woff');
+}
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
 
 li a {
   color: green;
 }
+
+/* +++++++++++++++++++++++++++++++
+header
++++++++++++++++++++++++++++++++ */
+
+#header{
+background-color: black;
+}
+
+.topBarMenu{
+  width: 101vw;
+  display: flex;
+}
+
+.logo{
+  flex: 1;
+}
+      .logo img{
+        width: 30vw;
+      }
+
+.menuIcon{
+    background: #E5CFE5;
+    height: 7vh;
+    width: 7vh;
+    margin: 3em;
+    position: relative;
+}
+
+    /* .menuIcon::before{
+      content: "";
+      position: absolute;
+      width: 9vw;
+      height: 0.4vh;
+      top: 2.3vh;
+      left: 3vw;
+      background-color: black;
+      box-shadow: 0 2vh;
+    } */
+
+    /* .menuIcon::after{
+      content: "";
+      position: absolute;
+      width: 4vw;
+      height: 0.5vh;
+    } */
+
+.scroll{
+  /* width: 100vw;
+  height: 10vh;
+  overflow: hidden; */
+  color: #FFE3E3;
+  white-space: nowrap;
+  overflow: hidden;
+  background: black;
+  font-family: 'RopaSans-Regular', sans-serif;
+  letter-spacing: 0.2em;
+  padding: 0 0 2vh 0;
+  font-size: 1.2em;
+  
+}
+
+.scroll p{ 
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* +++++++++++++++++++++++++++++++
+main
++++++++++++++++++++++++++++++++ */
+
+#main{
+    background-color: #F8E9FF;
+    /* height: 80vh; */
+    font-family: 'Hind-SemiBold', sans-serif;
+    padding-top: 1.5vh;
+    position: relative;
+}
+
+span{
+  font-family: 'RopaSans-Regular', sans-serif;
+  font-size: 1.5em;
+  padding: 0 0 0 4vw;
+  color: black;
+}
+
+/* .mainItems{
+} */
+
+.calendar, .journal, .map, .groups{
+  font-size: 6em;
+  margin: 3.5vh 0 0 8vw;
+  line-height: 6vh;
+  position: relative;
+  color: #C184C1;
+}
+
+.bgMainImg img{
+  width: 100vw;
+  position: absolute;
+  top: 0vh;
+  left: -8vw;
+  mix-blend-mode: multiply;
+  box-shadow: inset 0 0 71px -1px #f8e9ff;
+}
+
+.calendar{
+  /* background: url(../images/arrow.png) right bottom no-repeat; */
+}
+
+.journal{
+}
+
+.map{
+}
+
+.groups{
+}
+
+.arrows{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  height: 66vh;
+  /* width: 20vw; */
+  top: 0;
+  right: 0;
+  /* background-color: pink; */
+  justify-items: right;
+  margin-top: 13vh;
+}
+
+.grid-item{
+
+}
+
+.gridCal img{
+  width: 25vw;
+  animation: widthCal 5s infinite alternate-reverse;
+}
+
+    @keyframes widthCal{
+      0%{width: 25vw;}
+      100%{width: 20vw;}
+    }
+
+.gridJ img{
+  width: 16vw;
+}
+
+.gridMap img{
+  width: 50vw;
+}
+.gridGroups img{
+  width: 27vw;
+}
+
+
+.info{
+  background-color:#C184C1;
+  color: #F8E9FF;
+  font-size: 6em;
+  margin: 3vh 0 0 0;
+  height: 8vh;
+  padding: 2vh 0 0 9vw;
+}
+
+
+
+
+
