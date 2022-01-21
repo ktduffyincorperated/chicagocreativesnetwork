@@ -18,10 +18,15 @@ $(document).ready(function() {
 // hides
       $(" .typeBoxWhy, .typeBoxWhat, .typeBoxWhen, .typeBoxWhere, .typeBoxWho, .typeBoxHow, #menu").hide();
 
+//shows
+      $("#aboutMain").show();
+
+
 // menu icon = to X      
       $(".menuIcon").click(function(){
         $(this).addClass("gradientHolder");
          $("#menu").slideToggle();
+         
          $(".barOne").toggleClass("barOneRot");
          $(".barTwo").toggleClass("barTwoRot");
          $("footer").toggleClass("footerControl");
@@ -80,16 +85,6 @@ $(document).ready(function() {
         });
 
       
-
-
-
-
-
-
-
-
-
-
 
 });
 

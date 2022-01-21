@@ -44,6 +44,9 @@ def themesIndex(request):
 def themesAbout(request):
     return render(request, 'dashboard/themesabout.html') 
 
+def themesNetwork(request):
+    return render(request, 'dashboard/themesnetwork.html') 
+
 
 def register(request):
     if request.method == "GET":

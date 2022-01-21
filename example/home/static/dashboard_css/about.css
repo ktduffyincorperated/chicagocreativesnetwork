@@ -20,51 +20,13 @@
     background-color: #FFE3E3;
   }
 
-  
-  /* +++++++++++++++++++++++++++++++
-  header
-  +++++++++++++++++++++++++++++++ */
-  
-  #header{
-  background-color: black;
-  position: fixed;
-  }
-  
-  .topBarMenu{
-    width: 101vw;
-    display: flex;
-  }
-  
-  .logo{
-    flex: 1;
-  }
-        .logo img{
-          width: 30vw;
-        }
-  
-  .menuIcon{
-      background: #E5CFE5;
-      height: 7vh;
-      width: 7vh;
-      margin: 3em;
-      position: relative;
+/* menu override about */
+  #menu{
+    margin-top: 14vh;
   }
 
-  .barOne, .barTwo{
-      width: 10vw;
-      height: 0.5vh;
-      background: black;
-      margin: 2vh auto 0;
-  }
+  
 
-  .barOneRot{
-    transform: rotate(45deg);
-    margin: 3vh auto 0;
-  }
-  .barTwoRot{
-    transform: rotate(-45deg);
-    margin: 0vh auto 0;
-}
   
       /* .menuIcon::before{
         content: "";
@@ -116,6 +78,7 @@
         flex-direction: column;
         font-family: 'Hind-Medium', sans-serif;
         margin: 0vw 0 12vw 8vw;
+        position: relative;
     }
 
     .why, .what, .when, .where, .how, .who{
@@ -181,6 +144,14 @@
     .typeBox p{
         font-size: 2em;
     }
+
+    .typeBoxWhere{
+      width: 44vw;;
+    }
+
+    .typeBoxWhere img{
+      width: 50vw;
+  }
 
     .whyMargin{
         padding-bottom: 5vh;

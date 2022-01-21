@@ -1,12 +1,13 @@
-
- /* +++++++++++++++++++++++++++++++
- menu
-  +++++++++++++++++++++++++++++++ */  
+ 
 
   @font-face {
     font-family: 'Hind-Medium';
     src: local('Hind-Medium'), url('/static/fonts/Hind-Medium.woff') format('woff');
   }
+
+  /* +++++++++++++++++++++++++++++++
+ menu
+  +++++++++++++++++++++++++++++++ */ 
 
   #menu{
     position: fixed;
@@ -21,7 +22,18 @@
     font-size: 4em;
     text-align: right;
     height: 82vh;
-    margin-top: 14vh;;
+    margin-top: 0vh;
+    z-index: 1000;
+}
+
+#menu a{
+  text-decoration: none;
+  color: black;
+  transition: 1s text-decoration;
+}
+
+#menu a:hover{
+  text-decoration: underline;
 }
 
 #menu div{
@@ -29,14 +41,57 @@
     margin: 4vh 8vw 0 0;
 }
 
-.gradientHolder{
-    background: rgb(248,233,255);
-    background: -moz-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
-    background: -webkit-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
-    background: linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1);
 
-}
+  /* +++++++++++++++++++++++++++++++
+  header
+  +++++++++++++++++++++++++++++++ */
+  
+  #header{
+    background-color: black;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    }
+    
+    .topBarMenu{
+      width: 101vw;
+      display: flex;
+    }
+    
+    .logo{
+      flex: 1;
+    }
+          .logo img{
+            width: 30vw;
+          }
+    
+    .menuIcon{
+      background: rgb(248,233,255);
+      background: -moz-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+      background: -webkit-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+      background: linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1);
+        height: 7vh;
+        width: 7vh;
+        margin: 3em;
+        position: relative;
+    }
+  
+    .barOne, .barTwo{
+        width: 10vw;
+        height: 0.5vh;
+        background: black;
+        margin: 2vh auto 0;
+    }
+  
+    .barOneRot{
+      transform: rotate(45deg);
+      margin: 3vh auto 0;
+    }
+    .barTwoRot{
+      transform: rotate(-45deg);
+      margin: 0vh auto 0;
+  }
 
 
 
@@ -51,11 +106,13 @@ footer{
     background: black;
     position: absolute;
     width: 100vw;
+    z-index: 5000;
   }
   
   footer p{
     margin: 3vh 0 0 0;
     text-decoration: underline;
+
   
   }
   

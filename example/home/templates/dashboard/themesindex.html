@@ -24,6 +24,19 @@
         </div>
    </div> 
 
+   <!-- hidden menu -->
+    <div id="menu">
+        <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
+        <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuNet">Creative Network</div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+    </div> 
+
+
+
    <div id="main">
         <div class="mainItems">
             <div class="calendar">Events<br>
@@ -67,19 +80,10 @@
             <div class="grid-item gridMap">{% load static %} <img src="{% static "images/arroMap.svg" %}" alt="" /></div>
             <div class="grid-item gridGroups" >{% load static %} <img src="{% static "images/arroNet.svg" %}" alt="" /></div>
         </div>
-        <div class="info">Info</div>
+        <div class="info"><a href="{% url 'themesabout' %}">About</a></div>
 
    </div> 
 
-<div id="menu">
-        <div class="menuAbout">About</div>
-        <div class="menuDash">Dashboard</div>
-        <div class="menuCal">Calendar</div>
-        <div class="menuJ">Journalism</div>
-        <div class="menuCAMP">Cultural Asset Map</div>
-        <div class="menuNet">Creative Network</div>
-        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
-</div> 
 
    <footer>   
        <div class="footerMenu">

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{% static 'dashboard_js/example.js' %}"></script>
+<html>
+<body id="networkBody">
+    <div class="bgDots">
+        {% load static %} <img src="{% static "images/dotsBG.svg" %}" alt="" />
+    </div>
+    <div class="bgArrow bgArrowOne">
+        {% load static %} <img src="{% static "images/arrowNetworkOne.svg" %}" alt="" />
+    </div>
+    <div class="bgArrow bgArrowTwo">
+        {% load static %} <img src="{% static "images/arrowNetworkTwo.svg" %}" alt="" />
+    </div>
+    <div class="bgArrow bgArrowThree">
+        {% load static %} <img src="{% static "images/arrowNetworkThree.svg" %}" alt="" />
+    </div>
+   <div id="header">
+       <div class="topBarMenu">
+            <div class="logo">LOGO
+                {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+            </div>
+            <div class="menuIcon">
+                <div class="barOne"></div>
+                <div class="barTwo"></div>
+            </div>
+        </div>
+        <div class="scroll scrollNetwork">
+            <div class="wrapper">
+            <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
+                <p>*  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network  * </p> 
+            </div> 
+        </div>
+   </div> 
+
+   <!-- hidden menu -->
+    <div id="menu">
+        <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
+        <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuNet">Creative Network</div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+    </div> 
+
+
+
+   <div id="mainNetwork">
+       <div class="networkContent">
+           <div>Featured Content</div>
+           <div>Neighborhood Groups</div>
+           <div>Feed</div>
+           <div>Mentions + Messages</div>
+
+       </div>
+    </div>
+     
+
+
+   <footer>   
+       <div class="footerMenu">
+           <p class="footerAccess">* Accesibility *</p>
+           <p class="footerBlank"></p>
+           <p class="footerAbuse">* Report Abuse *</p>
+           <p class="footerMap">* Site Map *</p>
+           <p class="footerEmail">* Email * </p>
+           <p class="footerSurvey">* Survey *</p>   
+        </div>
+       <div class="footerLogo">
+        {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+       </div>
+   </footer> 
+   <div class="gradBar"></div>
+   
+
+</body>
+</html> 

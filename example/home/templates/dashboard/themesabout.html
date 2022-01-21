@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
+
 <!-- <script src="{% static 'dashboard_js/jquery-3.6.0.slim.min.js' %}"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
@@ -24,9 +25,10 @@
          </div>
     </div>
 
+<!-- hidden menu -->
     <div id="menu">
-        <div class="menuAbout">About</div>
-        <div class="menuDash">Dashboard</div>
+        <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
+        <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
         <div class="menuCal">Calendar</div>
         <div class="menuJ">Journalism</div>
         <div class="menuCAMP">Cultural Asset Map</div>
@@ -41,11 +43,11 @@
                 
                 
                 <h2 id="whyTog">Why</h2>
-                <div class="typeBox typeBoxWhy">
-                    <p>to provide powerful tools for connecting around creativity for Chicago’s Artists, Administrators and Auduences  </p>
-                </div>
                 <div class="bar barWhy">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </div>
+                <div class="typeBox typeBoxWhy">
+                    <p>to provide powerful tools for connecting around creativity for Chicago’s Artists, Administrators and Auduences  </p>
                 </div>
                 <div class="arrowWhy">
                     {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
@@ -89,9 +91,9 @@
                     <p><b>Chicago</b>
                         <u>Areas</u> - Far North Side, Northwest Side, North Side, West Side, Central, South Side, Southwest Side, Far Southwest Side, Far Southeast Side<br>
                         <u>Neighborhoods</u> - We acknowledge that the grouping system we are using has bias, and is not perfect.
+                    </p>
                         {% load static %} <img src="{% static "images/areas.png" %}" alt="" />
 
-                    </p>
                 </div>
                 <div class="bar barWhere">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
