@@ -6,6 +6,8 @@
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 <html>
 <body>
+
+
    <div id="header">
        <div class="topBarMenu">
             <div class="logo">LOGO
@@ -19,7 +21,7 @@
         <div class="scroll">
             <div class="wrapper">
             <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
-                <p>*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</p> 
+            <marquee direction="right">*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</marquee>
             </div> 
         </div>
    </div> 
@@ -66,13 +68,13 @@
                 
             </div>
 
+            <a href="{% url 'themesnetwork' %}"></a>
             <div class="groups">Creative<br>
                 <span>Network</span>
                 <div class="bgMainImg">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
                 </div>
-              
-            </div>
+            </div></a>
         </div>
         <div class="arrows">
             <div class="grid-item gridCal">{% load static %} <img src="{% static "images/arroCal.svg" %}" alt="" /></div>

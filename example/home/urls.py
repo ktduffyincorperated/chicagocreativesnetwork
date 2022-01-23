@@ -7,7 +7,7 @@ urlpatterns = [
     # user browser
     path('themesindex', views.themesIndex, name='themesindex'),
     path('themesabout', views.themesAbout, name='themesabout'),
-    path('themesnetwork', views.themesNetwork, name='themesnetworkt'),
+    path('themesnetwork', views.themesNetwork, name='themesnetwork'),
     path("home/", views.home, name='home'),
     path("accounts/", include("django.contrib.auth.urls")),
     path("register/", views.register, name="register"),

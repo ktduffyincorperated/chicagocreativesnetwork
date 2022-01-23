@@ -16,10 +16,17 @@ $(document).ready(function() {
           id.innerHTML = "Ooops!";
       }
 // hides
-      $(" .typeBoxWhy, .typeBoxWhat, .typeBoxWhen, .typeBoxWhere, .typeBoxWho, .typeBoxHow, #menu").hide();
+      $(" .typeBoxWhy, .typeBoxWhat, .typeBoxWhen, .typeBoxWhere, .typeBoxWho, .typeBoxHow, #menu, .landA").hide();
 
-//shows
-      $("#aboutMain").show();
+// land acknowledge
+$(".menuLand").click(function(){
+  $(".landA").slideDown();
+});
+
+$(".landClose").click(function(){
+  $(".landA").slideUp();
+});
+
 
 
 // menu icon = to X      

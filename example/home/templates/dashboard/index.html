@@ -1,35 +1,56 @@
  <!DOCTYPE html>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 
 <html>
 <body>
 
-    <h1 onclick="changeText(this)" >CLICK ME</h1>
-    <a> {{user.username|default:'Guest'}} </a>
+    <div id="header">
+        <div class="topBarMenu">
+             <div class="logo">LOGO
+                 {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+             </div>
+             <div class="menuIcon">
+                 <div class="barOne"></div>
+                 <div class="barTwo"></div>
+             </div>
+         </div>
+         <div class="scroll">
+            
+         </div>
+    </div>
 
-    {% if user.is_authenticated %}
-        <a href="{% url 'logout' %}"> Logout </a>
-    {% else %}
-        <a href="{% url 'login' %}"> Login </a>
-    {% endif %}
-    <a href="{% url 'home' %}"> Home </a>
+    <div id="indexMain">
+    <!-- <h1 onclick="changeText(this)" >Chicago Creative Network</h1> -->
 
-    <ul>
+    <div class="creds">
+        <a> {{user.username|default:'Guest'}} </a>
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}"> Logout </a>
+        {% else %}
+            <a href="{% url 'login' %}"> Login </a>
+        {% endif %}
+        <a href="{% url 'home' %}"> Home </a>
+    </div>
+
+    <!-- <ul>
         <li><a>This is a test dashboard page. Check the 'static' directory for the css and js used for this page.</a>
-    </ul>
+    </ul> -->
 
     {% if user.is_authenticated  %}
-        <h3>New Post</h3>
+        <h3>Group Title <br>New Post</h3>
         <form method="post" style="margin-top: 1.3em;">
-          {{ post_form.as_p }}
+          {{ post_form.as_p }} <br>
           {% csrf_token %}
 
           <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
 
         </form>
     {% endif %}
+</div>
 
     {% for post in post_list %}
         <div class="card mb-4">
@@ -40,6 +61,8 @@
         </div>
     </div>
     {% endfor %}
+
+
 
 </body>
 </html> 

@@ -24,7 +24,13 @@
     height: 82vh;
     margin-top: 0vh;
     z-index: 1000;
+    text-transform: uppercase;
 }
+
+#menuNetwork{
+  margin-top: -5vh;
+}
+
 
 #menu a{
   text-decoration: none;

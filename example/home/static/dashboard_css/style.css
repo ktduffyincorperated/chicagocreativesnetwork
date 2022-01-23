@@ -80,7 +80,7 @@ menu Index
   
 }
 
-.scroll p{ 
+marquee{ 
   font-size: 4em;
   margin: 0;
   padding: 0;
@@ -104,7 +104,7 @@ main
     margin-top: 20vh;
 }
 
-span{
+span {
   font-family: 'RopaSans-Regular', sans-serif;
   font-size: 1.5em;
   padding: 0 0 0 4vw;
@@ -173,17 +173,37 @@ span{
       0%{width: 25vw;}
       100%{width: 20vw;}
     }
+    
 
 .gridJ img{
   width: 16vw;
+  animation: widthJ 3s infinite alternate-reverse;
 }
+
+    @keyframes widthJ{
+      0%{width: 16vw;}
+      100%{width: 20vw;}
+    }
 
 .gridMap img{
   width: 50vw;
+  animation: widthMap 4s infinite alternate-reverse;
 }
+
+    @keyframes widthMap{
+      0%{width: 50vw;}
+      100%{width: 45vw;}
+    }
+
 .gridGroups img{
   width: 27vw;
+  animation: widthGroups 5s infinite alternate-reverse;
 }
+
+    @keyframes widthGroups{
+      0%{width: 27vw;}
+      100%{width: 10vw;}
+    }
 
 
 .info{
@@ -203,10 +223,11 @@ span{
 #networkBody{
   background: #E1EFF5;
   position: relative;
+    overflow: hidden;
 }
 
 #mainNetwork{
-  /* background-color: #E1EFF5; */
+  /* margin-top: 32vh; */
 }
 
 .bgDots{
@@ -285,6 +306,140 @@ span{
 }
 
 
+/* land acknowledgement  */
+
+.landA{
+  position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5CFE5;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+
+}
+
+.landA h2{
+  font-size: 4em;
+    font-family: 'RopaSans-Regular', sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10vh;
+}
+
+.landA p{
+  font-size: 2.55em;
+    font-family: 'Hind-SemiBold', sans-serif;
+    padding: 2em;
+}
+
+.landClose{
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  background-color: #C184C1;
+  top: 0;
+  right: 0;
+}
+
+.landXOne{
+  position: absolute;
+  top: 0;
+  right: 1.5vw;
+  width: 10vw;
+  height: 0.5vh;
+  background: black;
+  
+  transform: rotate(45deg);
+margin: 3vh auto 0;
+}
+
+.landXTwo{
+  position: absolute;
+  width: 10vw;
+  height: 0.5vh;
+  background: black;
+  top: 3vh;
+  transform: rotate(-45deg);
+margin: 0vh auto 0;
+right: 1vh;
+}
+
+
+
+/* index style */
+
+#indexMain{
+  margin: 19vh 10vw;
+  font-family: 'Hind-SemiBold', sans-serif;
+}
+
+#indexMain h3{
+  font-size: 4em;
+  margin-top: 3vh;
+}
+
+#indexMain p{
+  font-size: 4em;
+}
+
+label{
+  width: 100vw;
+    padding: 1vh;
+}
+
+#indexMain input {
+  height: 5vh;
+  width: 80vw;
+}
+
+#indexMain textarea {
+  height: 20vh;
+  width: 80vw;
+}
+
+button{
+  font-size: 4em;
+  width: 70vw;
+}
+
+.card{
+  border: 2px solid black;
+    padding: 2em;
+    margin: 2vh 0;
+    background: rgb(248,233,255);
+    background: -moz-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+    background: -webkit-linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+    background: linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1); 
+}
+
+.creds{
+  display: flex;
+    width: 11vw;
+    font-size: 2em;
+    background: rgb(248,233,255);
+    flex-direction: column;
+    padding: 2em;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 15vh;
+}
+
+.creds a{
+  flex: 1;
+ 
+}
+
+#title{
+  background-color: red;
+}
+
+#id_public{
+  width: 20vw;;
+}
 
 
 

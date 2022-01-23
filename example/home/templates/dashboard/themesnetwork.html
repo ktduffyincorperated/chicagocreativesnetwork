@@ -6,6 +6,18 @@
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 <html>
 <body id="networkBody">
+
+    <div class="landA">
+        <h2>Land Acknowledgement</h2>
+        <p>Indigenous people have migrated and cared for this land and water for millennia. I’d also like to take a moment to pay respect to the African Ancestors, to recognize the legacy of the kidnapping and the enslavement of African People, who never surrendered and who built the infrastructure of this country. Acknowledgements are nowhere near enough. I wanted to make space for this in my talk as one way for us settler allies remember the truth of this history and honor the contributions and traditions of Indigenous people is one way to reflect on our participation in settler colonialism.
+         <br><br>The largest server site in chicago, through which you are probably experiencing this site is located at 717 S. Wells Steet in Chicago. This area is on the traditional homelands of the Kiikaapol, Peroria, Myaamia, Kaskaski and Bodwéwadmi tribes. 
+         </p>
+         <div class="landClose">
+             <div class="landXOne"></div>
+             <div class="landXTwo"></div>
+         </div>
+    </div> 
+
     <div class="bgDots">
         {% load static %} <img src="{% static "images/dotsBG.svg" %}" alt="" />
     </div>
@@ -13,7 +25,7 @@
         {% load static %} <img src="{% static "images/arrowNetworkOne.svg" %}" alt="" />
     </div>
     <div class="bgArrow bgArrowTwo">
-        {% load static %} <img src="{% static "images/arrowNetworkTwo.svg" %}" alt="" />
+        {% load static %} <img src="{% static "images/arrowNetworkOne.svg" %}" alt="" />
     </div>
     <div class="bgArrow bgArrowThree">
         {% load static %} <img src="{% static "images/arrowNetworkThree.svg" %}" alt="" />
@@ -31,7 +43,7 @@
         <div class="scroll scrollNetwork">
             <div class="wrapper">
             <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
-                <p>*  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network  * </p> 
+            <marquee direction="right">*  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network  * </marquee> 
             </div> 
         </div>
    </div> 
@@ -51,6 +63,7 @@
 
    <div id="mainNetwork">
        <div class="networkContent">
+
            <div>Featured Content</div>
            <div>Neighborhood Groups</div>
            <div>Feed</div>
