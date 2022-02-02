@@ -168,6 +168,65 @@ footer{
   } */
 
 
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .logo img {
+    width: 20vw;
+  }
+
+.menuIcon{
+  height: 10vw;
+  margin: 2em 3em 0;
+  }
+
+  .barOne, .barTwo {
+    width: 5.5vw;
+    height: 0.7vh;
+    margin: 2vh auto 0;
+}
+
+.scroll{
+  font-size: 0.7em;
+  padding: 0 0 0vh 0;
+  }
+
+  #main{
+    margin-top: 23vh;
+  }
+
+  .calendar, .journal, .map, .groups {
+    font-size: 3em;
+  }
+
+  .info {
+    font-size: 2em;
+    height: 5vh;
+    padding: 2vh 0 0 0;
+    text-align: center;
+  }
+
+  .footerMenu {
+    font-size: 1.2em;
+  }
+
+  .footerLogo img {
+    width: 14vw;
+  }
+
+  footer p {
+    margin: 2vh 0 0 0;
+  }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
 
 
 

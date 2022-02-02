@@ -19,6 +19,10 @@ body{
   background-color: #E1EFF5;
 }
 
+#themesIndex{
+  background-color: #F8E9FF;
+}
+
 li a {
   color: green;
 }
@@ -438,7 +442,13 @@ button{
 }
 
 #id_public{
-  width: 20vw;;
+  width: 20vw;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 
 
