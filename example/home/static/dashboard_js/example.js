@@ -16,7 +16,8 @@ $(document).ready(function() {
           id.innerHTML = "Ooops!";
       }
 // hides
-      $(" .typeBoxWhy, .typeBoxWhat, .typeBoxWhen, .typeBoxWhere, .typeBoxWho, .typeBoxHow, #menu, .landA").hide();
+      $(" .typeBoxWhy, .typeBoxWhat, .typeBoxWhen, .typeBoxWhere, .typeBoxWho, .typeBoxHow").hide();
+      $("#menu, .landA").hide();
 
 // land acknowledge
 $(".menuLand").click(function(){
@@ -41,55 +42,98 @@ $(".landClose").click(function(){
       });
 
 // why open close      
-      $(".why").click(function(){
-        $(this).toggleClass("whyMargin");
-        $(".arrowWhy").toggleClass("arrowRotate");
-          $(".barWhy").fadeToggle("slow");
-            $(".typeBoxWhy").fadeToggle();
-            $("#whyTog").toggleClass("whyToggle");
+      $("#whyTog").click(function(){
+        $(this).toggleText('X', 'Why');
+        $(".typeBoxWhy").fadeToggle();
+        $(".what, .when, .where, .who, .how ").toggleClass("opacity");
+        $("footer").fadeToggle();
+        // $(this).toggleClass("whyMargin");
+        // $(".arrowWhy").toggleClass("arrowRotate");
+        //   $(".barWhy").fadeToggle("slow");
+            
+            // $("#whyTog").toggleClass("whyToggle");
 
         
       });
 
         // what open close      
-        $(".what").click(function(){
+        $("#whatTog").click(function(){
+          $(this).toggleText('X', 'What');
           $(".typeBoxWhat").fadeToggle("slow");
-          $(".barWhat").toggleClass('barOpacity');
-          $(this).toggleClass("whatMargin");
-          $(".arrowWhat").toggleClass("arrowRotate");
+          $(".why, .when, .where, .who, .how ").toggleClass("opacity");
+          $(".why").slideToggle();
+          $("footer").fadeToggle();
+          // $(".barWhat").toggleClass('barOpacity');
+          // $(this).toggleClass("whatMargin");
+          // $(".arrowWhat").toggleClass("arrowRotate");
         });
 
         // when open close      
-        $(".when").click(function(){
+        $("#whenTog").click(function(){
+          $(this).toggleText('X', 'When');
           $(".typeBoxWhen").fadeToggle("slow");
-          $(".barWhen").fadeToggle("slow");
-          $(this).toggleClass("whenMargin");
-          $(".arrowWhen").toggleClass("arrowRotate");
+          $(".why, .what, .where, .who, .how ").toggleClass("opacity");
+          $(".why, .what").slideToggle();
+          $("footer").fadeToggle();
+          // $(".barWhen").fadeToggle("slow");
+          // $(this).toggleClass("whenMargin");
+          // $(".arrowWhen").toggleClass("arrowRotate");
         });
 
         // where open close      
-        $(".where").click(function(){
+        $("#whereTog").click(function(){
+          $(this).toggleText('X', 'Where');
           $(".typeBoxWhere").fadeToggle("slow");
-          $(".barWhere").fadeToggle("slow");
-          $(this).toggleClass("whereMargin");
-          $(".arrowWhere").toggleClass("arrowRotate");
+          $(".why, .what, .when, .who, .how ").toggleClass("opacity");
+          $(".why, .what, .when").slideToggle();
+          $("footer").fadeToggle();
+          // $(".barWhere").fadeToggle("slow");
+          // $(this).toggleClass("whereMargin");
+          // $(".arrowWhere").toggleClass("arrowRotate");
         });
 
         // who open close      
-        $(".who").click(function(){
+        $("#whoTog").click(function(){
+          $(this).toggleText('X', 'Who is the site for');
           $(".typeBoxWho").fadeToggle("slow");
-          $(".barWho").fadeToggle("slow");
-          $(this).toggleClass("whoMargin");
-          $(".arrowWho").toggleClass("arrowRotate");
+          $(".why, .what, .when, .where, .how ").toggleClass("opacity");
+          $(".why, .what, .when, .where").slideToggle();
+          $("footer").fadeToggle();
+          // $(".barWho").fadeToggle("slow");
+          // $(this).toggleClass("whoMargin");
+          // $(".arrowWho").toggleClass("arrowRotate");
         });
 
         // how open close      
-        $(".how").click(function(){
+        $("#howTog").click(function(){
+          $(this).toggleText('X', 'How to use the site');
           $(".typeBoxHow").fadeToggle("slow");
-          $(".barHow").fadeToggle("slow");
-          $(this).toggleClass("howMargin");
-          $(".arrowHow").toggleClass("arrowRotate");
+          $(".why, .what, .when, .where, .who ").toggleClass("opacity");
+          $(".why, .what, .when, .where, .who").slideToggle();
+          $("footer").fadeToggle();
+          
+          // $(".barHow").fadeToggle("slow");
+          // $(this).toggleClass("howMargin");
+          // $(".arrowHow").toggleClass("arrowRotate");
         });
+
+        jQuery.fn.extend({
+          toggleText: function (a, b){
+              var that = this;
+                  if (that.text() != a && that.text() != b){
+                      that.text(a);
+                  }
+                  else
+                  if (that.text() == a){
+                      that.text(b);
+                  }
+                  else
+                  if (that.text() == b){
+                      that.text(a);
+                  }
+              return this;
+          }
+      });
 
       
 

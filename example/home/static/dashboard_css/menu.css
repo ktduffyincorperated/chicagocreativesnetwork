@@ -69,6 +69,7 @@
     }
           .logo img{
             width: 30vw;
+            margin: 0.5em 1em;
           }
     
     .menuIcon{
@@ -79,7 +80,7 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1);
         height: 7vh;
         width: 7vh;
-        margin: 3em;
+        margin: 2em;
         position: relative;
     }
   
@@ -124,7 +125,7 @@ footer{
   
   .footerMenu{
     font-family: 'Hind-SemiBold', sans-serif;
-    font-size: 2em;
+    font-size: 0.8em;
     flex: 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -163,16 +164,9 @@ footer{
   }
 
 
-  /* footerControl{
-      position: absolute;
-  } */
-
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   .logo img {
     width: 20vw;
@@ -190,7 +184,7 @@ footer{
 }
 
 .scroll{
-  font-size: 0.7em;
+  font-size: 2.7em;
   padding: 0 0 0vh 0;
   }
 
@@ -225,6 +219,51 @@ footer{
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .logo img {
+    width: 13vw;
+  }
+
+  .menuIcon {
+    height: 8vw;
+    width: 9vw;
+  }
+
+  .barOne, .barTwo {
+    margin: 4vh auto 0;
+  }
+
+  .topBarMenu {
+    height: 22vh;
+  }
+
+  .scroll{
+    font-size: 1.7em;
+      position: absolute;
+      top: 11vh;
+      z-index: -100;
+      left: 24vw;
+  }
+
+  #main{
+      margin-top: 21vh;
+  }
+
+  .calendar, .journal, .map, .groups {
+    margin: 5.5vh 0 0 8vw;
+  }
+
+  .bgMainImg img {
+    width: 43vw;
+  }
+
+  .info{
+    padding: 2vh 0 3vh 0;
+  }
+
+
+}
 
 
 

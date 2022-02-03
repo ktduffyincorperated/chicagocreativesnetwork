@@ -25,6 +25,11 @@
     margin-top: 14vh;
   }
 
+  .opacity{
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
   
 
   
@@ -58,19 +63,21 @@
     }  
     
     h1{
-        font-size: 8em;
-        color: #E989AB;
-        font-family: 'RopaSans-Regular', sans-serif;
-        text-decoration: underline;
-        text-decoration-thickness: 1vh;
-        text-decoration-color: black;
-        line-height: 1.2em;
-        letter-spacing: 0.05em;
-        margin: 14vh 7vw 0;  
+      font-size: 3.5em;
+      color: #E989AB;
+      font-family: 'RopaSans-Regular', sans-serif;
+      text-decoration: underline;
+        text-decoration-color: currentcolor;
+        text-decoration-thickness: auto;
+      text-decoration-thickness: 0.8vh;
+      text-decoration-color: black;
+      line-height: 1.2em;
+      letter-spacing: 0.05em;
+      margin: 19vh 7vw 1vh; 
     }
 
     .whoTitle, .howTitle{
-        font-size: 4.1em;
+        font-size: 1.7em;
     }
     
     .aboutItems{
@@ -83,13 +90,26 @@
 
     .why, .what, .when, .where, .how, .who{
         display: flex;
-        height: 10vh;
+        height: 8vh;
     }
 
 
     h2{
         flex:1;
-        font-size: 5em;
+        font-size: 1.7em;
+        position: relative;
+        z-index: 100;
+    }
+
+    h2::before{
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 0.5vh;
+      background-color: #E989AB;
+      z-index: -100;
+      bottom: -2vh;
+      left: 0;
     }
 
     .h2Toggle{
@@ -103,6 +123,7 @@
         flex:1;
         margin-left: -50vw;
         margin-top: 12vw;
+        display: none;
     }
 
     .bar img{
@@ -117,6 +138,7 @@
     .arrow, .arrowWhy{
         flex:0.5;
         margin: 8vh 0 0 -4vw;
+        display: none;
     }
 
     .arrow img, .arrowWhy img{
@@ -239,6 +261,57 @@ footer{
   background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
   margin-top: -1vh;
   }
+
+  @media (min-width: 768px) {
+
+    h1 {
+      font-size: 6em;
+      margin: 18vh 7vw 0;
+    }
+
+    h2{
+      font-size: 2.5em;
+    }
+
+    h2::before {
+      bottom: -3vh;
+    }
+
+    .why, .what, .when, .where, .how, .who {
+      display: flex;
+      height: 9vh;
+    }
+
+    .whoTitle, .howTitle {
+      font-size: 2.5em;
+    }
+
+    /* .bar {
+      margin-top: 6vw; 
+       display: none;
+    } */
+
+  }
+
+ 
+
+  @media (min-width: 1200px) {
+    h1{
+      text-align: center;
+      margin-top: 25vh;
+    }
+
+    h2, .whoTitle, .howTitle{
+      font-size: 2em;
+    }
+
+    .typeBox p {
+      font-size: 1.5em;
+    }
+
+  }
+
+  
 
 
 

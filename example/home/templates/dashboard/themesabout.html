@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- <script src="{% static 'dashboard_js/jquery-3.6.0.slim.min.js' %}"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
@@ -25,7 +25,7 @@
 
     <div id="header">
         <div class="topBarMenu">
-             <div class="logo">LOGO
+             <div class="logo">
                  {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
              </div>
              <div class="menuIcon">
@@ -50,8 +50,6 @@
         <h1>A New Network for Artists</h1>
         <div class="aboutItems">
             <div class="why">
-                
-                
                 <h2 id="whyTog">Why</h2>
                 <div class="bar barWhy">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
@@ -66,7 +64,7 @@
             
             
             <div class="what">
-                <h2>What</h2>
+                <h2 id="whatTog">What</h2>
                 <div class="typeBox typeBoxWhat">
                     <p>Concept by the Chicago Park District’s Arts & Culture Unit and design and development by Mx Design. Developed in consultation with artists, cultural organizers, and community leaders.
                     </p>
@@ -81,7 +79,7 @@
            
            
             <div class="when">
-                <h2>When</h2>
+                <h2 id="whenTog">When</h2>
                 <div class="typeBox typeBoxWhen">
                     <p>Developed and designed between 2020 and 2022.
                     </p>
@@ -96,7 +94,7 @@
 
 
             <div class="where">
-                <h2>Where</h2>
+                <h2 id="whereTog">Where</h2>
                 <div class="typeBox typeBoxWhere">
                     <p><b>Chicago</b>
                         <u>Areas</u> - Far North Side, Northwest Side, North Side, West Side, Central, South Side, Southwest Side, Far Southwest Side, Far Southeast Side<br>
@@ -115,7 +113,7 @@
 
 
             <div class="who">
-                <h2 class="whoTitle">Who is the site for</h2>
+                <h2 id="whoTog">Who is the site for</h2>
                 <div class="typeBox typeBoxWho">
                     <p><u>Artists and Creative Laborers</u> can find jobs, gigs, collaborators, friends, and mentors. 
                         <u>Community Organizations and Arts and Cultural Institutions</u> can find artists, audiences, community-based collaborators, and each other.
@@ -132,7 +130,7 @@
 
 
             <div class="how">
-                <h2 class="howTitle">How to use the site</h2>
+                <h2 id="howTog">How to use the site</h2>
                 <div class="typeBox typeBoxHow">
                     <p><u>Casually:</u> Anyone can check this site for cultural events, arts journalism, creative grant opportunities and more, without logging in. 
                         <u>Professionally:</u> Funders, galleries, venues, neighborhood arts organizations, and more are encouraged to use this site to connect their opportunities with arts professionals and audiences.
@@ -162,8 +160,9 @@
         <div class="footerLogo">
          {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
         </div>
+        <div class="gradBar"></div>
     </footer> 
-    <div class="gradBar"></div>
+    
 
 </body>
 </html> 
