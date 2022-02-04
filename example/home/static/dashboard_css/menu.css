@@ -69,7 +69,7 @@
     }
           .logo img{
             width: 30vw;
-            margin: 0.5em 1em;
+            margin: 1.5em 1em 0;
           }
     
     .menuIcon{
@@ -142,9 +142,9 @@ footer{
   .footerEmail{margin-top: -1vh; color: #E1EFF5;}
   .footerSurvey{margin-top: -1vh; color: #E6F4E6;}
   
-  .footerLogo{
+  .footerLogo {
     flex: 1;
-    margin-top: 2vh;
+    margin-top: 5vh;
   }
   
   .footerLogo img{

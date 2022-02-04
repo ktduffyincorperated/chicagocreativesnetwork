@@ -2,54 +2,33 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 <html>
-<body id="networkBody">
+<body id="themesNetwork">
 
-    <div class="landA">
-        <h2>Land Acknowledgement</h2>
-        <p>Indigenous people have migrated and cared for this land and water for millennia. I’d also like to take a moment to pay respect to the African Ancestors, to recognize the legacy of the kidnapping and the enslavement of African People, who never surrendered and who built the infrastructure of this country. Acknowledgements are nowhere near enough. I wanted to make space for this in my talk as one way for us settler allies remember the truth of this history and honor the contributions and traditions of Indigenous people is one way to reflect on our participation in settler colonialism.
-         <br><br>The largest server site in chicago, through which you are probably experiencing this site is located at 717 S. Wells Steet in Chicago. This area is on the traditional homelands of the Kiikaapol, Peroria, Myaamia, Kaskaski and Bodwéwadmi tribes. 
-         </p>
-         <div class="landClose">
-             <div class="landXOne"></div>
-             <div class="landXTwo"></div>
-         </div>
-    </div> 
 
-    <div class="bgDots">
-        {% load static %} <img src="{% static "images/dotsBG.svg" %}" alt="" />
-    </div>
-    <div class="bgArrow bgArrowOne">
-        {% load static %} <img src="{% static "images/arrowNetworkOne.svg" %}" alt="" />
-    </div>
-    <div class="bgArrow bgArrowTwo">
-        {% load static %} <img src="{% static "images/arrowNetworkOne.svg" %}" alt="" />
-    </div>
-    <div class="bgArrow bgArrowThree">
-        {% load static %} <img src="{% static "images/arrowNetworkThree.svg" %}" alt="" />
-    </div>
    <div id="header">
        <div class="topBarMenu">
-            <div class="logo">LOGO
-                {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+            <div class="logo">
+                {% load static %} <img src="{% static "images/logoWhiteText.png" %}" alt="" />
             </div>
             <div class="menuIcon">
                 <div class="barOne"></div>
                 <div class="barTwo"></div>
             </div>
         </div>
-        <div class="scroll scrollNetwork">
+        <div class="scroll">
             <div class="wrapper">
             <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
-            <marquee direction="right">*  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network  * </marquee> 
+            <marquee direction="right">*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</marquee>
             </div> 
         </div>
    </div> 
 
    <!-- hidden menu -->
-    <div id="menu">
+    <div id="menu" style="display: none;">
         <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
         <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
         <div class="menuCal">Calendar</div>
@@ -61,17 +40,17 @@
 
 
 
-   <div id="mainNetwork">
-       <div class="networkContent">
+    <div id="mainNetwork">
+        <div class="networkContent">
+    
+            <div>Featured Content</div>
+            <div>Neighborhood Groups</div>
+            <div>Feed</div>
+            <div>Mentions + Messages</div>
+    
+        </div>
+     </div>
 
-           <div>Featured Content</div>
-           <div>Neighborhood Groups</div>
-           <div>Feed</div>
-           <div>Mentions + Messages</div>
-
-       </div>
-    </div>
-     
 
 
    <footer>   
@@ -84,7 +63,7 @@
            <p class="footerSurvey">* Survey *</p>   
         </div>
        <div class="footerLogo">
-        {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+        {% load static %} <img src="{% static "images/whiteOutline.png" %}" alt="" />
        </div>
    </footer> 
    <div class="gradBar"></div>
@@ -92,3 +71,16 @@
 
 </body>
 </html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
