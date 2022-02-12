@@ -3,13 +3,14 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('network', views.index, name='index'),
     # user browser
     path('themesindex', views.themesIndex, name='themesindex'),
-    path('themesabout', views.themesAbout, name='themesabout'),
+    path('', views.themesAbout, name='themesabout'),
     path('themesnetwork', views.themesNetwork, name='themesnetwork'),
     path("home/", views.home, name='home'),
     path("accounts/", include("django.contrib.auth.urls")),
     path("register/", views.register, name="register"),
+    # path("login/", views.login, name="login"),
     path("posts/<slug:_slug>/", views.post_detail, name="post_detail"),
 ]

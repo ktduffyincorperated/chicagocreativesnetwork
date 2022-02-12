@@ -19,7 +19,7 @@
     background: linear-gradient(-130deg, rgba(248,233,255,1) 0%, rgba(255,227,227,1) 35%, rgba(225,239,245,1) 67%, rgba(230,244,230,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1);  
     font-family: 'Hind-Medium', sans-serif;
-    font-size: 4em;
+    font-size: 1.6em;
     text-align: right;
     height: 82vh;
     margin-top: 0vh;
@@ -118,9 +118,6 @@ footer{
   
   footer p{
     margin: 3vh 0 0 0;
-    text-decoration: underline;
-
-  
   }
   
   .footerMenu{
@@ -159,8 +156,8 @@ footer{
   
   .gradBar{
     height: 3vw;
-  background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
-  margin-top: -1vh;
+    background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
+    margin-top: -1vh;
   }
 
 
@@ -223,15 +220,27 @@ footer{
 
   .logo img {
     width: 13vw;
+    margin: 1.5em 4em 0;
   }
 
-  .menuIcon {
+  /* .menuIcon {
     height: 8vw;
     width: 9vw;
   }
 
   .barOne, .barTwo {
     margin: 4vh auto 0;
+  } */
+
+  .menuIcon {
+    height: 6vw;
+    width: 6vw;
+    margin: 2em 5em 0;
+  }
+
+  .barOne, .barTwo {
+    margin: 2.8vh auto 0;
+    width: 3.5vw;
   }
 
   .topBarMenu {
@@ -244,6 +253,7 @@ footer{
       top: 11vh;
       z-index: -100;
       left: 24vw;
+      
   }
 
   #main{
@@ -252,7 +262,9 @@ footer{
 
   .calendar, .journal, .map, .groups {
     margin: 5.5vh 0 0 8vw;
+    font-size: 2.3em;
   }
+
 
   .bgMainImg img {
     width: 43vw;
@@ -262,11 +274,60 @@ footer{
     padding: 2vh 0 3vh 0;
   }
 
+  .footerLogo img {
+    width: 9vw;
+  }
+
+
+}
+
+@media (min-width: 1920px) {
+
+  .menuIcon {
+    height: 5vw;
+    width: 5vw;
+    margin: 4em 8em 0;
+  }
+
+  #menu{
+    font-size: 2.5em;
+  }
+
+  .barOne, .barTwo {
+    margin: 2.5vh auto 0;
+    width: 3.5vw;
+  }
+
+  .logo img {
+
+    margin: 2em 7em 0;
+  }
+
+  .footerLogo {
+    margin-top: 3vh;
+  }
+
+  .footerLogo img {
+    width: 8vw;
+  }
+
+  .footerMenu {
+    font-size: 1.5em;
+  }
+
+  scroll {
+    font-size: 2.5em;
+    left: 25vw;
+  }
+
+  .calendar, .journal, .map, .groups {
+    margin: 5.5vh 0 0 8vw;
+    font-size: 3.3em;
 
 }
 
 
-
+}
 
 
 

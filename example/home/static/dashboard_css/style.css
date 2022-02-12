@@ -23,9 +23,11 @@ body{
   background-color: #F8E9FF;
 }
 
-li a {
-  color: green;
+#registerBody{
+  background-color: #F8E9FF;
 }
+
+
 /* +++++++++++++++++++++++++++++++
 a index about
 +++++++++++++++++++++++++++++++ */
@@ -235,14 +237,20 @@ span {
 
 .bgDots{
   position: absolute;
-  z-index: -10;
-  width: 100vw;
-  top: -9vh;
+  top: 60vh;
+  animation: networkBG 10s infinite alternate-reverse;
+  z-index: -200;
 }
 
-    .bgDots img{
-      width: 100vw;
-    }
+.bgDots img{
+  width: 100vw;
+}
+
+@keyframes networkBG {
+  0%{transform: scaleY(0); opacity:0; }
+  10%{transform: scaleY(0);opacity:0;}
+  100%{transform: scaleY(13); opacity:0.5;}
+}
 
 .networkContent{
   display: flex;
@@ -253,17 +261,26 @@ span {
   width: 100vw;
 }
 
+.networkContent a{
+  text-decoration: none;
+  color: black;
+}
+
 .networkContent div{
   flex: 1;
-  border: 3px solid #86B699;
+  border-bottom: 3px solid #86B699;
+  border-top: 0px solid #86B699;
+  border-left: 0px solid #86B699;
+  border-right: 0px solid #86B699;
   font-family: 'Hind-SemiBold', sans-serif;
-  background-color: #F8E9FF;
+  background-color: #E1EFF5;
   width: 90vw;
   margin: 4vh auto;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 100vw;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0;
   padding: 1.3vh 0;
 }
+
 
 .bgArrow{
   position: absolute;
@@ -370,11 +387,47 @@ right: 1vh;
 
 
 
-/* index style */
+/* social index style */
 
 #indexMain{
-  margin: 19vh 10vw;
+  /* margin: 19vh 10vw; */
   font-family: 'Hind-SemiBold', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{ flex: 1;}
+
+.creds {
+  display: flex;
+  width: 100vw;
+  font-size: 3em;
+  flex-direction: row;
+  margin: 0 auto 0;
+  flex: 1;
+  text-align: center;
+}
+
+.creds a{
+  flex: 1;
+  /* text-align: center; */
+  color: black;
+  text-decoration: none; 
+  padding-top: 3vh;
+  /* margin-left: 10vw; */
+  /* align-self:center; */
+}
+
+.guestName{
+  background-color: #E1EFF5;
+}
+
+.login, .logout{
+  background-color: #F8E9FF
+}
+
+.publicFeed{
+  background-color: #E6F4E6;
 }
 
 #indexMain h3{
@@ -388,7 +441,47 @@ right: 1vh;
 
 label{
   width: 100vw;
-    padding: 1vh;
+padding: 1vh;
+font-family: 'Hind-SemiBold', sans-serif;
+font-size: 2em;
+margin-bottom: -4vh;
+margin-top: 4vh;
+z-index: 200;
+}
+
+#formReg{
+  margin: 21vh auto 0;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+
+.helptext{
+  font-size: 1em;
+  margin: 1vh 0 0vh 0;
+  padding: 0;
+  font-style: italic;
+}
+
+#id_username, #id_password1, #id_password2{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #C184C1;
+  background-color: #FAEEFF;
+  height: 10vh;
+  font-size: 2em;
+  color: #C184C1;
+  font-family: 'RopaSans-Regular', sans-serif;
+}
+
+input{
+  background-color: #C184C1;
+  font-size: 2em;
+  font-family: 'Hind-SemiBold', sans-serif;
+  height: 10vh;
+  color: white;
 }
 
 #indexMain input {
@@ -417,23 +510,9 @@ label{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8e9ff",endColorstr="#e6f4e6",GradientType=1); 
 }
 
-.creds{
-  display: flex;
-    width: 11vw;
-    font-size: 2em;
-    background: rgb(248,233,255);
-    flex-direction: column;
-    padding: 2em;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 15vh;
-}
 
-.creds a{
-  flex: 1;
- 
-}
+
+
 
 #title{
   background-color: red;
@@ -448,6 +527,23 @@ label{
   .bgMainImg img {
     left: 2vw;
   }
+
+  .networkContent div {
+    flex: 1;
+    border-bottom: 3px solid #86B699;
+    border-top: 0px solid #86B699;
+    border-left: 0px solid #86B699;
+    border-right: 0px solid #86B699;
+    font-family: 'Hind-SemiBold', sans-serif;
+    background-color: #E1EFF5;;
+    width: 90vw;
+    margin: 4vh auto;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    padding: 1.3vh 0;
+
+}
+
 }
 
 

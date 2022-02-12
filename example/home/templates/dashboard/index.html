@@ -2,6 +2,9 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 
 <html>
@@ -9,8 +12,8 @@
 
     <div id="header">
         <div class="topBarMenu">
-             <div class="logo">LOGO
-                 {% load static %} <img src="{% static "images/CCN_black_blob.png" %}" alt="" />
+             <div class="logo">
+                 {% load static %} <img src="{% static "images/logoWhiteText.png" %}" alt="" />
              </div>
              <div class="menuIcon">
                  <div class="barOne"></div>
@@ -18,22 +21,38 @@
              </div>
          </div>
          <div class="scroll">
-            
+             <div class="wrapper">
+             <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
+             <marquee direction="right" behavior="alternate">*  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network</marquee>
+             </div> 
          </div>
-    </div>
+    </div> 
+
+       <!-- hidden menu -->
+       <div id="menu" style="display: none;">
+        <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
+        <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuNet">Creative Network</div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+    </div> 
+
+
 
     <div id="indexMain">
     <!-- <h1 onclick="changeText(this)" >Chicago Creative Network</h1> -->
-
+    <h1>Chicago Creatives Network Social</h1>
     <div class="creds">
-        <a> {{user.username|default:'Guest'}} </a>
+        <a class="guestName"> {{user.username|default:'Hello'}} </a>
 
         {% if user.is_authenticated %}
-            <a href="{% url 'logout' %}"> Logout </a>
+            <a class="logout" href="{% url 'logout' %}"> Logout </a>
         {% else %}
-            <a href="{% url 'login' %}"> Login </a>
+            <a class="login" href="{% url 'login' %}"> Login </a>
         {% endif %}
-        <a href="{% url 'home' %}"> Home </a>
+        <a class="publicFeed" href="{% url 'home' %}"> Public Feed </a>
     </div>
 
     <!-- <ul>

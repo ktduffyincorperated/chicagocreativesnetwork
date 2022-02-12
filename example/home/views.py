@@ -47,6 +47,9 @@ def themesAbout(request):
 def themesNetwork(request):
     return render(request, 'dashboard/themesnetwork.html') 
 
+# def login(request):
+#     return render(request, 'registration/login.html') 
+
 
 def register(request):
     if request.method == "GET":
@@ -60,6 +63,20 @@ def register(request):
             user = form.save()
             login(request, user)
             return redirect(reverse("index"))
+
+# def login(request):
+#     if request.method == "GET":
+#         return render(
+#             request, "registration/login.html",
+#             {"form": LoginForm}
+#         )
+#     elif request.method == "POST": 
+#         form = UserCreationForm(request.POST)
+#         if form.is_valid():
+#             user = form.save()
+#             login(request, user)
+#             return redirect(reverse("index"))
+
 
 
 

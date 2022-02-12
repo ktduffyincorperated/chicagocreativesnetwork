@@ -266,7 +266,7 @@ footer{
 
     h1 {
       font-size: 6em;
-      margin: 18vh 7vw 0;
+      margin: 15vh 7vw 0;
     }
 
     h2{
@@ -299,6 +299,7 @@ footer{
     h1{
       text-align: center;
       margin-top: 25vh;
+      font-size: 5em;
     }
 
     h2, .whoTitle, .howTitle{
@@ -308,6 +309,38 @@ footer{
     .typeBox p {
       font-size: 1.5em;
     }
+
+    .why, .what, .when, .where, .how, .who {
+      height: 10vh;
+
+  }
+
+  .footerMenu {
+    font-size: 1.5em;}
+
+    .footerLogo img {
+      width: 16vw;
+
+}
+
+#menu {
+  font-family: 'Hind-Medium', sans-serif;
+  font-size: 1.75em;
+  margin-top: 21vh;
+}
+
+.barOneRot {
+  transform: rotate(45deg);
+  margin: 4vh auto 0;
+}
+
+.barTwoRot {
+  transform: rotate(-45deg);
+  margin: 0vh auto 0;
+}
+
+
+
 
   }
 

@@ -1,4 +1,35 @@
-<h2>Login</h2>
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{% static 'dashboard_js/example.js' %}"></script>
+<html>
+<body id="registerBody">
+
+
+   <div id="header">
+       <div class="topBarMenu">
+            <div class="logo">
+                {% load static %} <img src="{% static "images/logoWhiteText.png" %}" alt="" />
+            </div>
+            <div class="menuIcon">
+                <div class="barOne"></div>
+                <div class="barTwo"></div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="wrapper">
+            <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
+            <marquee direction="right" behavior="alternate">*  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login  *  Login</marquee>
+            </div> 
+        </div>
+   </div> 
+
+
+
+
 
 <form method="post">
     {% csrf_token %}
@@ -8,3 +39,7 @@
 
 <a href="{% url 'register' %}">Register</a> </br>
 <a href="{% url 'index' %}">Back to dashboard</a>
+
+
+</body>
+</html>

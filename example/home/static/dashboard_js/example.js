@@ -62,7 +62,7 @@ $(".landClose").click(function(){
           $(".typeBoxWhat").fadeToggle("slow");
           $(".why, .when, .where, .who, .how ").toggleClass("opacity");
           $(".why").slideToggle();
-          $("footer").fadeToggle();
+          $("footer").Toggle();
           // $(".barWhat").toggleClass('barOpacity');
           // $(this).toggleClass("whatMargin");
           // $(".arrowWhat").toggleClass("arrowRotate");
@@ -71,10 +71,10 @@ $(".landClose").click(function(){
         // when open close      
         $("#whenTog").click(function(){
           $(this).toggleText('X', 'When');
-          $(".typeBoxWhen").fadeToggle("slow");
           $(".why, .what, .where, .who, .how ").toggleClass("opacity");
           $(".why, .what").slideToggle();
           $("footer").fadeToggle();
+          $(".typeBoxWhen").fadeToggle("slow");
           // $(".barWhen").fadeToggle("slow");
           // $(this).toggleClass("whenMargin");
           // $(".arrowWhen").toggleClass("arrowRotate");

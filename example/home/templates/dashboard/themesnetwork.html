@@ -22,10 +22,15 @@
         <div class="scroll">
             <div class="wrapper">
             <!-- impliment css solution -- <p></p>overflow hidden -- transform x in place of marque -->
-            <marquee direction="right">*  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard  *  Dashboard</marquee>
+            <marquee direction="right" behavior="alternate">*  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network  *  Creative Network</marquee>
             </div> 
         </div>
    </div> 
+
+   <!-- bg textures -->
+   <div class="bgDots">
+    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+    </div>
 
    <!-- hidden menu -->
     <div id="menu" style="display: none;">
@@ -43,10 +48,11 @@
     <div id="mainNetwork">
         <div class="networkContent">
     
-            <div>Featured Content</div>
-            <div>Neighborhood Groups</div>
-            <div>Feed</div>
+            <div><a href="{% url 'register' %}">Register</a></div>
+            <div><a href="{% url 'login' %}">Login</a></div>
+            <div>Groups</div>
             <div>Mentions + Messages</div>
+            <!-- <div>Feed</div> -->
     
         </div>
      </div>
