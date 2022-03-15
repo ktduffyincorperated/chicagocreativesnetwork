@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+from django.core.management.utils import get_random_secret_key
 from pathlib import Path
+import os
+import sys
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,10 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@1fcnf0x4voda+m!vr5fd_bw$5q72py4iwpf#@l!y!vb=b)j+e'
+# SECRET_KEY = 'django-insecure-@1fcnf0x4voda+m!vr5fd_bw$5q72py4iwpf#@l!y!vb=b)j+e'
+
+SECRET_KEY = os.getenv('django-insecure-@1fcnf0x4voda+m!vr5fd_bw$5q72py4iwpf#@l!y!vb=b)j+e', get_random_secret_key())
+# from command line
+# c63975df8c124c37c3a7f350791a4424bcd91bd8
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 export DJANGO_DEBUG=False
 
@@ -76,6 +85,7 @@ WSGI_APPLICATION = 'example.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 
 DATABASES = {
     'default': {
@@ -127,3 +137,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
