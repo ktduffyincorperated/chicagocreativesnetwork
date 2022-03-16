@@ -32,11 +32,11 @@ SECRET_KEY = os.getenv('django-insecure-@1fcnf0x4voda+m!vr5fd_bw$5q72py4iwpf#@l!
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
-DEBUG = os.getenv("DEBUG", "False") == "True"
+# DEBUG = os.getenv("DEBUG", "False") == "True"
 
-export DJANGO_DEBUG=False
+DJANGO_DEBUG=True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 LOGIN_REDIRECT_URL = "index"
 LOGOUT_REDIRECT_URL = "index"
 
