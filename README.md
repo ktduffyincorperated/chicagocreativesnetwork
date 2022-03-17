@@ -38,5 +38,6 @@ Note that you will need to have an active virtual environment so run `source ./v
 
 ## Adding static content
 
-If you would like to make alterations to the html, css, or js you can find the templates in the `home/static` and `home/templates` folder. 
+If you would like to make alterations to the html, css, or js you can find the templates in the `home/static` and `home/templates` folder.
+
 `static` contains css and js. `templates` contains html.  These files contain the most basic examples of content.
