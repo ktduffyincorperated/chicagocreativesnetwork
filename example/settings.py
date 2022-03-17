@@ -30,8 +30,7 @@ SECRET_KEY = os.getenv('django-insecure-@1fcnf0x4voda+m!vr5fd_bw$5q72py4iwpf#@l!
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-# DEBUG = os.getenv("DEBUG", "False") == "True"
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
 DJANGO_DEBUG=True
 
@@ -132,12 +131,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    '/workspace/staticfiles',
-]
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
