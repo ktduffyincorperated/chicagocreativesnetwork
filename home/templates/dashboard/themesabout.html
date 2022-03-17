@@ -1,168 +1,222 @@
 <!DOCTYPE html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'dashboard_css/style.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'dashboard_css/menu.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'dashboard_css/about.css' %}"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- <script src="{% static 'dashboard_js/jquery-3.6.0.slim.min.js' %}"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{% static 'dashboard_js/example.js' %}"></script>
 
-
 <html>
-<body>
-
+  <body>
     <div class="landA">
-        <h2>Land Acknowledgement</h2>
-        <p>Indigenous people have migrated and cared for this land and water for millennia. I’d also like to take a moment to pay respect to the African Ancestors, to recognize the legacy of the kidnapping and the enslavement of African People, who never surrendered and who built the infrastructure of this country. Acknowledgements are nowhere near enough. I wanted to make space for this in my talk as one way for us settler allies remember the truth of this history and honor the contributions and traditions of Indigenous people is one way to reflect on our participation in settler colonialism.
-         <br><br>The largest server site in chicago, through which you are probably experiencing this site is located at 717 S. Wells Steet in Chicago. This area is on the traditional homelands of the Kiikaapol, Peroria, Myaamia, Kaskaski and Bodwéwadmi tribes. 
-         </p>
-         <div class="landClose">
-             <div class="landXOne"></div>
-             <div class="landXTwo"></div>
-         </div>
-    </div> 
+      <h2>Land Acknowledgement</h2>
+      <p>
+        Indigenous people have migrated and cared for this land and water for
+        millennia. I’d also like to take a moment to pay respect to the African
+        Ancestors, to recognize the legacy of the kidnapping and the enslavement
+        of African People, who never surrendered and who built the
+        infrastructure of this country. Acknowledgements are nowhere near
+        enough. I wanted to make space for this in my talk as one way for us
+        settler allies remember the truth of this history and honor the
+        contributions and traditions of Indigenous people is one way to reflect
+        on our participation in settler colonialism. <br /><br />The largest
+        server site in chicago, through which you are probably experiencing this
+        site is located at 717 S. Wells Steet in Chicago. This area is on the
+        traditional homelands of the Kiikaapol, Peroria, Myaamia, Kaskaski and
+        Bodwéwadmi tribes.
+      </p>
+      <div class="landClose">
+        <div class="landXOne"></div>
+        <div class="landXTwo"></div>
+      </div>
+    </div>
 
     <div id="header">
-        <div class="topBarMenu">
-             <div class="logo">
-                 {% load static %} <img src="{% static "images/logoWhiteText.png" %}" alt="" />
-             </div>
-             <div class="menuIcon">
-                 <div class="barOne"></div>
-                 <div class="barTwo"></div>
-             </div>
-         </div>
+      <div class="topBarMenu">
+        <div class="logo">
+          {% load static %} <img src="{% static "images/logoWhiteText.png" %}"
+          alt="" />
+        </div>
+        <div class="menuIcon">
+          <div class="barOne"></div>
+          <div class="barTwo"></div>
+        </div>
+      </div>
     </div>
 
-<!-- hidden menu -->
+    <!-- hidden menu -->
     <div id="menu">
-        <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
-        <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
-        <div class="menuCal">Calendar</div>
-        <div class="menuJ">Journalism</div>
-        <div class="menuCAMP">Cultural Asset Map</div>
-        <div class="menuNet">Creative Network</div>
-        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
-</div> 
+      <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
+      <div class="menuDash">
+        <a href="{% url 'themesindex' %}">Dashboard</a>
+      </div>
+      <div class="menuCal">Calendar</div>
+      <div class="menuJ">Journalism</div>
+      <div class="menuCAMP">Cultural Asset Map</div>
+      <div class="menuNet">Creative Network</div>
+      <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+    </div>
 
     <div id="aboutMain">
-        <h1>A New Network for Artists</h1>
-        <div class="aboutItems">
-            <div class="why">
-                <h2 id="whyTog">Why</h2>
-                <div class="bar barWhy">
-                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
-                </div>
-                <div class="typeBox typeBoxWhy">
-                    <p>to provide powerful tools for connecting around creativity for Chicago’s Artists, Administrators and Auduences  </p>
-                </div>
-                <div class="arrowWhy">
-                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
-                </div>
-            </div>
-            
-            
-            <div class="what">
-                <h2 id="whatTog">What</h2>
-                <div class="typeBox typeBoxWhat">
-                    <p>Concept by the Chicago Park District’s Arts & Culture Unit and design and development by Mx Design. Developed in consultation with artists, cultural organizers, and community leaders.
-                    </p>
-                </div>
-                <div class="bar barWhat">
-                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
-                </div>
-                <div class="arrow arrowWhat">
-                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
-                </div>
-            </div>
-           
-           
-            <div class="when">
-                <h2 id="whenTog">When</h2>
-                <div class="typeBox typeBoxWhen">
-                    <p>Developed and designed between 2020 and 2022.
-                    </p>
-                </div>
-                <div class="bar barWhen">
-                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
-                </div>
-                <div class="arrow">
-                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
-                </div>
-            </div>
-
-
-            <div class="where">
-                <h2 id="whereTog">Where</h2>
-                <div class="typeBox typeBoxWhere">
-                    <p><b>Chicago</b>
-                        <u>Areas</u> - Far North Side, Northwest Side, North Side, West Side, Central, South Side, Southwest Side, Far Southwest Side, Far Southeast Side<br>
-                        <u>Neighborhoods</u> - We acknowledge that the grouping system we are using has bias, and is not perfect.
-                    </p>
-                        {% load static %} <img src="{% static "images/areas.png" %}" alt="" />
-
-                </div>
-                <div class="bar barWhere">
-                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
-                </div>
-                <div class="arrow arrowWhere">
-                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
-                </div>
-            </div>
-
-
-            <div class="who">
-                <h2 id="whoTog">Who is the site for</h2>
-                <div class="typeBox typeBoxWho">
-                    <p><u>Artists and Creative Laborers</u> can find jobs, gigs, collaborators, friends, and mentors. 
-                        <u>Community Organizations and Arts and Cultural Institutions</u> can find artists, audiences, community-based collaborators, and each other.
-                        <u>Art Lovers, Neighborhood Stakeholders and the Curious</u> can find new practices to relish, creative neighbors, and contemporary Chicago-based art to see and support. 
-                    </p>
-                </div>
-                <div class="bar barWho">
-                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
-                </div>
-                <div class="arrow arrowWho">
-                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
-                </div>
-            </div>
-
-
-            <div class="how">
-                <h2 id="howTog">How to use the site</h2>
-                <div class="typeBox typeBoxHow">
-                    <p><u>Casually:</u> Anyone can check this site for cultural events, arts journalism, creative grant opportunities and more, without logging in. 
-                        <u>Professionally:</u> Funders, galleries, venues, neighborhood arts organizations, and more are encouraged to use this site to connect their opportunities with arts professionals and audiences.
-                        <u>Communally:</u> By logging in, users can unlock powerful tools to share resources and collaborate. We encourage collaboration across disciplines, amongst institutions, and within and outside of narrow conceptions of the arts.
-                        <u>TBD:</u> Please tell us how you’d like this site to grow and serve you and your community! (email contact or form)
-                    </p>
-                </div>
-                <div class="bar barHow">
-                    {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
-                </div>
-                <div class="arrow arrowHow">
-                    {% load static %} <img src="{% static "images/arrowPink.svg" %}" alt="" />
-                </div>
-            </div>
+      <h1>A New Network for Artists</h1>
+      <h2>{% load static %} {% static "images/logoWhiteText.png" %}</h2>
+      <div class="aboutItems">
+        <div class="why">
+          <h2 id="whyTog">Why</h2>
+          <div class="bar barWhy">
+            {% load static %} <img src="{% static "images/textureBar.svg" %}"
+            alt="" />
+          </div>
+          <div class="typeBox typeBoxWhy">
+            <p>
+              to provide powerful tools for connecting around creativity for
+              Chicago’s Artists, Administrators and Auduences
+            </p>
+          </div>
+          <div class="arrowWhy">
+            {% load static %} <img src="{% static "images/arrowPink.svg" %}"
+            alt="" />
+          </div>
         </div>
+
+        <div class="what">
+          <h2 id="whatTog">What</h2>
+          <div class="typeBox typeBoxWhat">
+            <p>
+              Concept by the Chicago Park District’s Arts & Culture Unit and
+              design and development by Mx Design. Developed in consultation
+              with artists, cultural organizers, and community leaders.
+            </p>
+          </div>
+          <div class="bar barWhat">
+            {% load static %} <img src="{% static "images/textureBar.svg" %}"
+            alt="" />
+          </div>
+          <div class="arrow arrowWhat">
+            {% load static %} <img src="{% static "images/arrowPink.svg" %}"
+            alt="" />
+          </div>
+        </div>
+
+        <div class="when">
+          <h2 id="whenTog">When</h2>
+          <div class="typeBox typeBoxWhen">
+            <p>Developed and designed between 2020 and 2022.</p>
+          </div>
+          <div class="bar barWhen">
+            {% load static %} <img src="{% static "images/textureBar.svg" %}"
+            alt="" />
+          </div>
+          <div class="arrow">
+            {% load static %} <img src="{% static "images/arrowPink.svg" %}"
+            alt="" />
+          </div>
+        </div>
+
+        <div class="where">
+          <h2 id="whereTog">Where</h2>
+          <div class="typeBox typeBoxWhere">
+            <p>
+              <b>Chicago</b> <u>Areas</u> - Far North Side, Northwest Side,
+              North Side, West Side, Central, South Side, Southwest Side, Far
+              Southwest Side, Far Southeast Side<br />
+              <u>Neighborhoods</u> - We acknowledge that the grouping system we
+              are using has bias, and is not perfect.
+            </p>
+            {% load static %} <img src="{% static "images/areas.png" %}" alt=""
+            />
+          </div>
+          <div class="bar barWhere">
+            {% load static %} <img src="{% static "images/textureBar.svg" %}"
+            alt="" />
+          </div>
+          <div class="arrow arrowWhere">
+            {% load static %} <img src="{% static "images/arrowPink.svg" %}"
+            alt="" />
+          </div>
+        </div>
+
+        <div class="who">
+          <h2 id="whoTog">Who is the site for</h2>
+          <div class="typeBox typeBoxWho">
+            <p>
+              <u>Artists and Creative Laborers</u> can find jobs, gigs,
+              collaborators, friends, and mentors.
+              <u>Community Organizations and Arts and Cultural Institutions</u>
+              can find artists, audiences, community-based collaborators, and
+              each other.
+              <u>Art Lovers, Neighborhood Stakeholders and the Curious</u> can
+              find new practices to relish, creative neighbors, and contemporary
+              Chicago-based art to see and support.
+            </p>
+          </div>
+          <div class="bar barWho">
+            {% load static %} <img src="{% static "images/textureBar.svg" %}"
+            alt="" />
+          </div>
+          <div class="arrow arrowWho">
+            {% load static %} <img src="{% static "images/arrowPink.svg" %}"
+            alt="" />
+          </div>
+        </div>
+
+        <div class="how">
+          <h2 id="howTog">How to use the site</h2>
+          <div class="typeBox typeBoxHow">
+            <p>
+              <u>Casually:</u> Anyone can check this site for cultural events,
+              arts journalism, creative grant opportunities and more, without
+              logging in. <u>Professionally:</u> Funders, galleries, venues,
+              neighborhood arts organizations, and more are encouraged to use
+              this site to connect their opportunities with arts professionals
+              and audiences. <u>Communally:</u> By logging in, users can unlock
+              powerful tools to share resources and collaborate. We encourage
+              collaboration across disciplines, amongst institutions, and within
+              and outside of narrow conceptions of the arts. <u>TBD:</u> Please
+              tell us how you’d like this site to grow and serve you and your
+              community! (email contact or form)
+            </p>
+          </div>
+          <div class="bar barHow">
+            {% load static %} <img src="{% static "images/textureBar.svg" %}"
+            alt="" />
+          </div>
+          <div class="arrow arrowHow">
+            {% load static %} <img src="{% static "images/arrowPink.svg" %}"
+            alt="" />
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer>   
-        <div class="footerMenu">
-            <p class="footerAccess">* Accesibility *</p>
-            <p class="footerBlank"></p>
-            <p class="footerAbuse">* Report Abuse *</p>
-            <p class="footerMap">* Site Map *</p>
-            <p class="footerEmail">* Email * </p>
-            <p class="footerSurvey">* Survey *</p>   
-         </div>
-        <div class="footerLogo">
-         {% load static %} <img src="{% static "images/whiteOutline.png" %}" alt="" />
-        </div>
-        <div class="gradBar"></div>
-    </footer> 
-    
-
-</body>
-</html> 
+    <footer>
+      <div class="footerMenu">
+        <p class="footerAccess">* Accesibility *</p>
+        <p class="footerBlank"></p>
+        <p class="footerAbuse">* Report Abuse *</p>
+        <p class="footerMap">* Site Map *</p>
+        <p class="footerEmail">* Email *</p>
+        <p class="footerSurvey">* Survey *</p>
+      </div>
+      <div class="footerLogo">
+        {% load static %} <img src="{% static "images/whiteOutline.png" %}"
+        alt="" />
+      </div>
+      <div class="gradBar"></div>
+    </footer>
+  </body>
+</html>
