@@ -1,6 +1,7 @@
  <!DOCTYPE html>
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/style.css' %}">
+<link rel="stylesheet" type="X-Content-Type-Options: nosniff" href="{% static 'dashboard_css/style.css' %}">
+
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/menu.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'dashboard_css/about.css' %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,9 +35,10 @@
         <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
         <div class="menuCal">Calendar</div>
         <div class="menuJ">Journalism</div>
-        <div class="menuCAMP">Cultural Asset Map</div>
+        <div class="menuCAMP"><a href="{% url 'https://www.arcgis.com/apps/dashboards/52d080c8e02b44919c9a81b8b149782b' %}">Cultural Asset Map</a></div>
         <div class="menuNet">Creative Network</div>
         <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+
     </div> 
 
 

@@ -164,7 +164,7 @@
     }
 
     .typeBox p{
-        font-size: 2em;
+        font-size: 1em;
     }
 
     .typeBoxWhere{
@@ -224,7 +224,7 @@ footer{
   
   .footerMenu{
     font-family: 'Hind-SemiBold', sans-serif;
-    font-size: 2em;
+    font-size: 0.8em;
     flex: 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
