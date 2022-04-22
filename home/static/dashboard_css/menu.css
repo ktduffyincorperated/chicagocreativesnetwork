@@ -8,7 +8,6 @@
   /* +++++++++++++++++++++++++++++++
  menu
   +++++++++++++++++++++++++++++++ */ 
-
   #menu{
     position: fixed;
     width: 100vw;
@@ -106,8 +105,6 @@
 footer
   +++++++++++++++++++++++++++++++ */ 
 
-
-
 footer{
     display: flex;
     background: black;
@@ -161,8 +158,9 @@ footer{
   }
 
 
-
+/* +++++++++++++++++++++++++++++++ */
 /* Medium devices (landscape tablets, 768px and up) */
+/* +++++++++++++++++++++++++++++++ */
 @media (min-width: 768px) {
 
   .logo img {
@@ -214,8 +212,10 @@ footer{
 
 }
 
-
+/* +++++++++++++++++++++++++++++++ */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* +++++++++++++++++++++++++++++++ */
+
 @media (min-width: 1200px) {
 
   .logo img {
@@ -281,6 +281,10 @@ footer{
 
 }
 
+/* +++++++++++++++++++++++++++++++ */
+/* largest devices, 1920 and up */
+/* +++++++++++++++++++++++++++++++ */
+
 @media (min-width: 1920px) {
 
   .menuIcon {
@@ -325,8 +329,6 @@ footer{
     font-size: 3.3em;
 
 }
-
-
 }
 
 

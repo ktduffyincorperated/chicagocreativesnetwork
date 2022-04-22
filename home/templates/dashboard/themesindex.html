@@ -33,10 +33,12 @@
         <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
         <div class="menuCal">Calendar</div>
         <div class="menuJ">Journalism</div>
-        <div class="menuCAMP">Cultural Asset Map</div>
-        <div class="menuNet">Creative Network</div>
+        <div class="menuCAMP"><a href="https://www.arcgis.com/apps/dashboards/52d080c8e02b44919c9a81b8b149782b" target="_blank">Cultural Asset Map</a></div>
+        <div class="menuNet"><a href="{% url 'themesnetwork' %}">Creative Network</a></div>
         <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
     </div> 
+
+
 
 
 
@@ -61,10 +63,11 @@
                 
             </div>
 
-            <div class="map">Cultural Asset<br>
+            <div class="map"><a href="https://www.arcgis.com/apps/dashboards/52d080c8e02b44919c9a81b8b149782b" target="_blank">Cultural Asset<br>
                 <span>Map</span>
                 <div class="bgMainImg">
                     {% load static %} <img src="{% static "images/textureBar.svg" %}" alt="" />
+                </a>    
                 </div>
                 
             </div>

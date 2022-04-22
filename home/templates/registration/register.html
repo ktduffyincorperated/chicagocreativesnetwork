@@ -29,16 +29,30 @@
    </div> 
 
 
+      <!-- hidden menu -->
+      <div id="menu" style="display: none;">
+        <div class="menuAbout"><a href="{% url 'themesabout' %}">About</a></div>
+        <div class="menuDash"><a href="{% url 'themesindex' %}">Dashboard</a></div>
+        <div class="menuCal">Calendar</div>
+        <div class="menuJ">Journalism</div>
+        <div class="menuCAMP"><a href="https://www.arcgis.com/apps/dashboards/52d080c8e02b44919c9a81b8b149782b" target="_blank">Cultural Asset Map</a></div>
+        <div class="menuNet"><a href="{% url 'themesnetwork' %}">Creative Network</a></div>
+        <div class="menuLand">LAND ACKNOWLEDGEMENT</div>
+    </div> 
+
+
 
 
 
 <form id="formReg" method="post">
     {% csrf_token %}
     {{form}}
-    <input type="submit" value="Register">
+    <input id="subReg" type="submit" value="Register">
 </form>
 
+<div id="backTLog">
 <a href="{% url 'login' %}">Back to login</a>
+</div>
 
 </body>
 </html>

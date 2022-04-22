@@ -26,6 +26,7 @@ $(".menuLand").click(function(){
 
 $(".landClose").click(function(){
   $(".landA").slideUp();
+  console.log("slideUp")
 });
 
 

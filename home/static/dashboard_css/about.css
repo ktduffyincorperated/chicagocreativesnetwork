@@ -172,7 +172,7 @@
     }
 
     .typeBoxWhere img{
-      width: 50vw;
+      /* width: 50vw; */
   }
 
     .whyMargin{
@@ -258,10 +258,15 @@ footer{
   
   .gradBar{
     height: 3vw;
-  background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
-  margin-top: -1vh;
+    background: linear-gradient(90deg, #C184C1 0%, #E989AB 34.37%, #97BBCA 65.1%, #86B699 100%);
+    margin-top: -1vh;
   }
 
+
+
+   /* +++++++++++++++++++++++++++++++
+  768+
+  +++++++++++++++++++++++++++++++ */
   @media (min-width: 768px) {
 
     h1 {
@@ -293,8 +298,11 @@ footer{
 
   }
 
- 
 
+ 
+ /* +++++++++++++++++++++++++++++++
+  1200+
+  +++++++++++++++++++++++++++++++ */
   @media (min-width: 1200px) {
     h1{
       text-align: center;
@@ -307,7 +315,8 @@ footer{
     }
 
     .typeBox p {
-      font-size: 1.5em;
+      font-size: 2.5em;
+      margin-top: 7.25vh;
     }
 
     .why, .what, .when, .where, .how, .who {
@@ -338,9 +347,6 @@ footer{
   transform: rotate(-45deg);
   margin: 0vh auto 0;
 }
-
-
-
 
   }
 

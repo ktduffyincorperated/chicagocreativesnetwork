@@ -15,6 +15,10 @@ body{
   background-color: #E1EFF5;
 }
 
+#relative{
+  position: relative;
+}
+
 #networkBody{
   background-color: #E1EFF5;
 }
@@ -116,8 +120,9 @@ span {
   color: black;
 }
 
-/* .mainItems{
-} */
+.mainItems a{
+  text-decoration:none;
+}
 
 .calendar, .journal, .map, .groups{
   font-size: 2.5em;
@@ -143,7 +148,8 @@ span {
 .journal{
 }
 
-.map{
+.map a{
+  text-decoration: none;
 }
 
 .groups{
@@ -235,12 +241,17 @@ span {
   /* margin-top: 32vh; */
 }
 
+/*
 .bgDots{
   position: absolute;
   top: 60vh;
   animation: networkBG 10s infinite alternate-reverse;
   z-index: -200;
+  height: 100vh;
+  overflow: hidden;
 }
+*/
+
 
 .bgDots img{
   width: 100vw;
@@ -249,7 +260,7 @@ span {
 @keyframes networkBG {
   0%{transform: scaleY(0); opacity:0; }
   10%{transform: scaleY(0);opacity:0;}
-  100%{transform: scaleY(13); opacity:0.5;}
+  100%{transform: scaleY(3); opacity:0.5;}
 }
 
 .networkContent{
@@ -287,7 +298,6 @@ span {
   z-index: -10;
   
 }
-
 
 
 .bgArrowOne{
@@ -339,7 +349,7 @@ span {
 }
 
 .landA h2{
-  font-size: 4em;
+  font-size: 2em;
     font-family: 'RopaSans-Regular', sans-serif;
     letter-spacing: 0.2em;
     text-align: center;
@@ -348,7 +358,7 @@ span {
 }
 
 .landA p{
-  font-size: 2.55em;
+  font-size: 1em;
     font-family: 'Hind-SemiBold', sans-serif;
     padding: 2em;
 }
@@ -359,7 +369,7 @@ span {
   height: 15vw;
   background-color: #C184C1;
   top: 0;
-  right: 0;
+  z-index: 1000;
 }
 
 .landXOne{
@@ -426,6 +436,22 @@ h1{ flex: 1;}
   background-color: #F8E9FF
 }
 
+#loginForm{
+  width: 90vw;
+    margin: 020vh auto 0;
+}
+
+#loginB{
+  width: 90vw;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.errorlist{
+  font-family: 'Hind-SemiBold', sans-serif;
+  line-height: 2vh;
+}
+
 .publicFeed{
   background-color: #E6F4E6;
 }
@@ -443,7 +469,7 @@ label{
   width: 100vw;
 padding: 1vh;
 font-family: 'Hind-SemiBold', sans-serif;
-font-size: 2em;
+font-size: 1.5em;
 margin-bottom: -4vh;
 margin-top: 4vh;
 z-index: 200;
@@ -470,8 +496,9 @@ z-index: 200;
   border-right: none;
   border-bottom: 5px solid #C184C1;
   background-color: #FAEEFF;
-  height: 10vh;
-  font-size: 2em;
+  height: 5vh;
+  font-size: 1.5em;
+  margin-top: 2vh;
   color: #C184C1;
   font-family: 'RopaSans-Regular', sans-serif;
 }
@@ -499,6 +526,32 @@ input{
   width: 70vw;
 }
 
+#subReg{
+  margin-top: 5vh;
+}
+
+#backTLog{
+  font-family: 'Hind-SemiBold', sans-serif;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+#backTLog a{
+  color: black;
+}
+
+input:focus { 
+  outline: none !important;
+  border-color: none;
+  box-shadow: 0 6px 5px #e29aff;
+}
+
+textarea:focus { 
+  outline: none !important;
+  border-color: none;
+  box-shadow: 0 6px 5px #e29aff;
+}
+
 .card{
   border: 2px solid black;
     padding: 2em;
@@ -511,9 +564,6 @@ input{
 }
 
 
-
-
-
 #title{
   background-color: red;
 }
@@ -522,7 +572,9 @@ input{
   width: 20vw;
 }
 
-
+/* +++++++++++++++++++++++++++++++ */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* +++++++++++++++++++++++++++++++ */
 @media (min-width: 1200px) {
   .bgMainImg img {
     left: 2vw;
@@ -545,6 +597,11 @@ input{
 }
 
 }
+
+
+/* +++++++++++++++++++++++++++++++ */
+/* largest devices, 1920 and up */
+/* +++++++++++++++++++++++++++++++ */
 
 
 
